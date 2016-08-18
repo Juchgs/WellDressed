@@ -1,0 +1,83 @@
+#login{
+    color:white;
+    background-color: #524d46;
+    width: 98.1%;
+    height: 180px;
+    margin-left: 0.9%;
+    border: solid white 2px;
+}
+
+#logintable{
+    top:40%;
+    float: right;    
+}
+#login h1{
+      top: 50%;
+      padding: 2%;
+      width: 150px;
+      float: left;
+      font-size: 40px;
+      font-family: initial;      
+}
+#login h2{
+      top: 50%;
+      padding: 1px;
+      width: 150px;
+      font-size: 18px;
+      font-family: initial;        
+}
+#login a{
+      top: 17%;
+      padding: 8px;
+      width: 200px;
+      margin-bottom: 20%;
+      right: 16%;
+      font-size: 14px;
+      font-family: initial;
+      color: white;
+}
+#botao{
+   top: 14%;
+   right: 4%;
+   font-family: initial;
+}
+#email{
+    
+   top: 14%;
+   right: 39%;
+}
+#senha{
+    
+   top: 14%;
+   right: 14%;
+}
+#cadastro{
+    color:white;
+    background-color: #524d46;
+    width: 40%;
+    height: 500px;
+    float: right;
+    margin-top: 10%;
+    margin-right: 15%;   
+    border: solid white 2px;
+}  
+#cadastro h1{
+      top: 31%;
+      width: 150px;
+      right: 30%;
+      font-size: 30px;
+      font-family: initial; 
+} 
+#cadastro h3{
+      top: 42%;
+      width: 150px;
+      right: 38%;
+      font-size: 18px;
+      font-family: initial;
+}
+#botao2{
+    font-family: initial;
+}
+body{
+  background-image: url(https://secure.static.tumblr.com/e40a955acc8638491f2ad3e8ed549293/eztndpx/XIMn5b9nm/tumblr_static_tumblr_static_2zywzyksyq0wwccg0wkggs8ss_640.jpg);
+}
