@@ -82,14 +82,11 @@ public class FashionistaDAO { //Data Access Object
                     = (Fashionista) session.get(Fashionista.class, emailID);
             fashionista.setEmail(email);
             fashionista.setNome(nome);
-<<<<<<< HEAD
             fashionista.setSenha(senha);
             fashionista.setSobrenome(sobrenome);
             
-=======
             fashionista.setSobrenome(sobrenome);
             fashionista.setSenha(senha);
->>>>>>> df53af708707bb39e42b0c4cc8c6f2c9f2107a1f
             session.update(fashionista);
             tx.commit();
         } catch (HibernateException e) {
