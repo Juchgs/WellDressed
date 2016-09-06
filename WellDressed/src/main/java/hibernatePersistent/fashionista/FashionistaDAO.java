@@ -73,13 +73,18 @@ public class FashionistaDAO { //Data Access Object
     }
 
     /* Method to UPDATE salary for an fashionista */
-    public void updateFashionista(String emailID, String nome, String sobrenome, String email,String senha ) {
+    public void updateFashionista(String emailID, String email, String nome, String senha, String sobrenome ) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
             Fashionista fashionista
                     = (Fashionista) session.get(Fashionista.class, emailID);
+            fashionista.setEmail(email);
+            fashionista.setNome(nome);
+            fashionista.setSenha(senha);
+            fashionista.setSobrenome(sobrenome);
+            
             session.update(fashionista);
             tx.commit();
         } catch (HibernateException e) {
@@ -91,7 +96,7 @@ public class FashionistaDAO { //Data Access Object
             session.close();
         }
     }
-
+    
     /* Method to DELETE an fashionista from the records */
     public void deleteFashionista(String emailID) {
         Session session = HibernateUtil.abrirSessaoComBD();

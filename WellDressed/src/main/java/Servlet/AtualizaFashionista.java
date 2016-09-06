@@ -33,13 +33,13 @@ public class AtualizaFashionista extends HttpServlet {
      
     Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("fashionistaAtual");
         FashionistaDAO fashidao = new FashionistaDAO();
-
-            String sobrenome = request.getParameter("sobrenome");
-            String nome = request.getParameter("nome");
+        
             String email = request.getParameter("email");
+            String nome = request.getParameter("nome");
             String senha = request.getParameter("senha");
+            String sobrenome = request.getParameter("sobrenome");
      
-    fashidao.updateFashionista(fashionista.getEmail(), senha, nome, email, sobrenome);
+    fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome);
 
             // aí, depois de atualizar, vc recarrega a list na sessão http:
    List<Fashionista> fashionistas = fashidao.listFashionista();

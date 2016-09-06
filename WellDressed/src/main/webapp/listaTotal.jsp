@@ -41,10 +41,12 @@
             <div id="perfil">
                 <div id="feed">
                     <display:table name="${sessionScope.fashionistas}" class="dataTable">
-                        <display:column property="nome" />
-                        <display:column property="sobrenome" />
+                        
                         <display:column property="email" />
+                        <display:column property="nome" />
                         <display:column property="senha" />
+                        <display:column property="sobrenome" />
+                        
                         <display:column title="Editar" href="CarregaFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>
                         <display:column title="Deletar" href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
                     </display:table>

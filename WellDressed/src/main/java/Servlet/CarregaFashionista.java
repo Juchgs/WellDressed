@@ -28,16 +28,12 @@ public class CarregaFashionista extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String email = request.getParameter("email");
-      
-        System.out.println("loko vei... " + email);
+        Fashionista fash = (Fashionista) request.getSession().getAttribute("currentSessionUser");
+        
         FashionistaDAO fashionistaDao = new FashionistaDAO();
-        Fashionista fashionista = fashionistaDao.recuperaFashionista(email);
+        Fashionista fashionista = fashionistaDao.recuperaFashionista(fash.getEmail());
        
-        System.out.println("what?");
-        System.out.println("Só p testar: " + fashionista.getEmail());
-       
-        request.getSession(true).setAttribute("clienteAtual", fashionista);
+        request.getSession(true).setAttribute("fashionistaAtual", fashionista);
         response.sendRedirect("atualizarFashionista.jsp");
     }
 
