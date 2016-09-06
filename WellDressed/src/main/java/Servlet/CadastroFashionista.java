@@ -23,6 +23,8 @@ public class CadastroFashionista extends HttpServlet {
         fashionista.setSobrenome(request.getParameter("sobrenome"));
         fashionista.setEmail(request.getParameter("email"));
         fashionista.setSenha(request.getParameter("senha"));
+        fashionista.setAtivar(true);
+        fashionista.setDesativar(false);
 
         boolean funciona = false;
         try {
