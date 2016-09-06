@@ -67,21 +67,22 @@
                    <form action="AtualizaFashionista" method="post">
                         <table style="align-content:center; ">
                             <tr><br><br><br><br>
+                            <tr>
+                                <td><h3>Email</h3></td>
+                                <td><input type="email" value="${sessionScope.fashionistaAtual.email}" id="email2" name="email" required="required" placeholder="Digite seu Email..." /></td>
+                            </tr>
                             <td><h3>Nome</h3></td> 
-                            <td><input type="text" name="${sessionScope.fashionistas}" class="caixaTexto" id="nome"/></td>
+                            <td><input type="text" id="nome"  name="nome" value="${sessionScope.fashionistaAtual.nome}" required="required" placeholder="Digite seu nome..."/></td>
+                            </tr>
+                             <tr>
+                                <td><h3>Senha</h3></td>
+                                <td><input type="password" id="senha2"  name="senha" value="${sessionScope.fashionistaAtual.senha}" required="required" placeholder="Digite sua Senha..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Sobrenome</h3></td>
-                                <td><input type="text" name="sobrenome" id="sobrenome"/></td>
+                                <td><input type="text" id="sobrenome"  name="sobrenome" value="${sessionScope.fashionistaAtual.sobrenome}" required="required" placeholder="Digite sua Sobrenome..."/></td>
                             </tr>
-                            <tr>
-                                <td><h3>Email</h3></td>
-                                <td><input type="email" name="email" id="email2"/></td>
-                            </tr>
-                            <tr>
-                                <td><h3>Senha</h3></td>
-                                <td><input type="password" name="senha" id="senha2"/></td>
-                            </tr>
+                           
                             
                             <td><h3>Município</h3></td>
                             <td><input type="text" name="municipio" class="caixaTexto" id="municipio"/></td>
@@ -129,7 +130,7 @@
                                 <td><input type="text" name="uf" id="uf"/></td>
                             </tr>
                         </table>
-                        <input type="submit" value="Atualizar" class="button big special" id="botao3">
+                        <input type="submit" value="Atualizar" class="button big special" id="botao3" onclick="window.open('Perfil.jsp')">
                     </form>
                 </section>
             </div>
