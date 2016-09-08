@@ -72,7 +72,6 @@
                             <td><a href="Configuracoes.jsp">Configurações</a></td>
                             <td>
                                 <td><a href="Fashionistas.jsp">Fashionistas</a></td>
-                            </td>
                         </tr>
                     </table>
                 </div>
