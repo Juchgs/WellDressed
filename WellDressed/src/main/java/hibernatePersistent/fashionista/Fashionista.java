@@ -62,6 +62,13 @@ public class Fashionista {
    
    @Column(name = "uf")
    private String uf;
+   
+   @Column(name = "ativar")
+   private boolean ativar;
+   
+   @Column(name = "desativar")
+   private boolean desativar;
+
 
  
     public String getEmail() {
@@ -189,6 +196,34 @@ public class Fashionista {
     public void setUf(String uf) {
         this.uf = uf;
     }  
+
+    /**
+     * @return the ativar
+     */
+    public boolean isAtivar() {
+        return ativar;
+    }
+
+    /**
+     * @param ativar the ativar to set
+     */
+    public void setAtivar(boolean ativar) {
+        this.ativar = ativar;
+    }
+
+    /**
+     * @return the desativar
+     */
+    public boolean isDesativar() {
+        return desativar;
+    }
+
+    /**
+     * @param desativar the desativar to set
+     */
+    public void setDesativar(boolean desativar) {
+        this.desativar = desativar;
+    }
 }
 
     
