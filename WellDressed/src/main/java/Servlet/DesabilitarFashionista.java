@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Servlet;
 
 import java.io.IOException;
@@ -6,39 +11,40 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import hibernatePersistent.fashionista.Fashionista;
-import hibernatePersistent.fashionista.FashionistaDAO;
-import java.util.List;
-import org.hibernate.HibernateException;
 
-public class CadastroFashionista extends HttpServlet {
+/**
+ *
+ * @author aluno
+ */
+public class DesabilitarFashionista extends HttpServlet {
 
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        FashionistaDAO fashionistaDAO = new FashionistaDAO();
-        Fashionista fashionista = new Fashionista();
-
-        fashionista.setNome(request.getParameter("nome"));
-        fashionista.setSobrenome(request.getParameter("sobrenome"));
-        fashionista.setEmail(request.getParameter("email"));
-        fashionista.setSenha(request.getParameter("senha"));
-        fashionista.setAtivar(true);
-
-        boolean funciona = false;
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
         try {
-            funciona = fashionistaDAO.addFashionista(fashionista);
-        } catch (HibernateException ex) {
-            ex.printStackTrace();
-            funciona = false;
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet DesabilitarFashionista</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet DesabilitarFashionista at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        } finally {
+            out.close();
         }
-
-        if (funciona) {
-            response.sendRedirect("sucessoCadastro.jsp");
-        } else {
-            response.sendRedirect("erro.jsp");
-        }
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
