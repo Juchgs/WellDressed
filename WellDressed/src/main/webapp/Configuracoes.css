@@ -330,4 +330,33 @@ table{
     font-size: 150%;
     
  }
+ #botao5{
+    font-family: FontAwesome;
+    margin-left:28%;
+    top: 90%;
+   
+  
+}
+#botao4{
+    font-family: FontAwesome;
+    margin-left:2%;
+    margin-top:0%;
+    color: white;
+    font-size: 150%;
+    background-color: #003;
+}
+p{
+    
+    font-family: FontAwesome;
+    margin-left:20%;
+    left: 100%;
+    font-size: 200%;
+    padding-top: 23%;
+ 
+}
+#pop{
+    
+    padding-top: 7%;
+    margin-left:70%;
+}
  
