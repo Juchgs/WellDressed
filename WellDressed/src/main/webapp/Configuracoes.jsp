@@ -63,10 +63,14 @@
      
          <div id="perfil">
                 <div id="config4">
+                    <div id = "pop">
+                        <input type="submit" value="Desativar conta" id="botao4" onclick="window.open('Desativar.jsp')">
+                        <input type="submit" value="Excluir" id="botao4" onclick="window.open('Excluir.jsp')">
+                    </div>
              <section>
                    <form action="AtualizaFashionista" method="post">
                         <table style="align-content:center; ">
-                            <tr><br><br><br><br>
+                            <tr><br>
                             <tr>
                                 <td><h3>Email</h3></td>
                                 <td><input type="email" value="${sessionScope.fashionistaAtual.email}" id="email2" name="email" required="required" placeholder="Digite seu Email..." /></td>
@@ -132,7 +136,8 @@
                         </table>
                         <input type="submit" value="Atualizar" class="button big special" id="botao3" onclick="window.open('Perfil.jsp')">
                     </form>
-                </section>
+                           
+</section>
             </div>
         </div>
     </body>
