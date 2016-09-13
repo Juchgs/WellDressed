@@ -28,6 +28,10 @@
         <servlet-name>DeletaFashionista</servlet-name>
         <servlet-class>Servlet.DeletaFashionista</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DesabilitarFashionista</servlet-name>
+        <servlet-class>Servlet.DesabilitarFashionista</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroFashionista</servlet-name>
         <url-pattern>/CadastroFashionista</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>ListaFashionista</servlet-name>
         <url-pattern>/ListaFashionista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DesabilitarFashionista</servlet-name>
+        <url-pattern>/DesabilitarFashionista</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
