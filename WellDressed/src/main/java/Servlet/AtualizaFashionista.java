@@ -9,6 +9,7 @@ import hibernatePersistent.fashionista.Fashionista;
 import hibernatePersistent.fashionista.FashionistaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -31,22 +32,30 @@ public class AtualizaFashionista extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
      
-    Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("fashionistaAtual");
+    Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("currentSessionUser");
         FashionistaDAO fashidao = new FashionistaDAO();
         
             String email = request.getParameter("email");
             String nome = request.getParameter("nome");
             String senha = request.getParameter("senha");
             String sobrenome = request.getParameter("sobrenome");
+            String municipio = request.getParameter("municipio");
+            Date data_nascimento = request.getParameter("data_nascimento");
+            Integer ddd = request.getParameter("ddd");
+            Integer numero = request.getParameter(Integer.parseInt(numero));
+            char sexo = request.getParameter("sexo");
+            String pais = request.getParameter("pais");
+            String bairro = request.getParameter("bairro");
+            String complemento = request.getParameter("complemento");
+            String tipo_logradouro = request.getParameter("tipo_logradouro");
+            String logradouro = request.getParameter("logradouro");
+            Integer num_logradouro = request.getParameter("num_logradouro");
+            String uf = request.getParameter("uf");
      
-    fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome);
+    fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro,  complemento,  tipo_logradouro, logradouro,  num_logradouro,  uf );
+    request.getSession(true).setAttribute("currentSessionUser", fashionista);
 
-            // aí, depois de atualizar, vc recarrega a list na sessão http:
-   List<Fashionista> fashionistas = fashidao.listFashionista();
-    request.getSession(true).setAttribute("fashionistas", fashionistas);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listaTotal.jsp");
+         response.sendRedirect("Configuracoes.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

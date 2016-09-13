@@ -2,6 +2,7 @@ package hibernatePersistent.fashionista;
 
 import Hibernate.HibernateUtil;
 import hibernatePersistent.fashionista.Fashionista;
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -73,19 +74,30 @@ public class FashionistaDAO { //Data Access Object
     }
 
     /* Method to UPDATE salary for an fashionista */
-    public void updateFashionista(String emailID, String email, String nome, String senha, String sobrenome ) {
+    public Fashionista updateFashionista(String emailID, String email, String nome, String senha, String sobrenome, String municipio, Date data_nascimento, Integer ddd, Integer numero, char sexo, String pais, String bairro, String complemento, String tipo_logradouro, String logradouro, Integer num_logradouro, String uf ) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
+        Fashionista fashionista = null;
         try {
             tx = session.beginTransaction();
-            Fashionista fashionista
+            fashionista
                     = (Fashionista) session.get(Fashionista.class, emailID);
             fashionista.setEmail(email);
             fashionista.setNome(nome);
             fashionista.setSenha(senha);
             fashionista.setSobrenome(sobrenome);
-            fashionista.setSobrenome(sobrenome);
-            fashionista.setSenha(senha);
+            fashionista.setMunicipio(municipio);
+            fashionista.setData_nascimento(data_nascimento);
+            fashionista.setDdd(ddd);
+            fashionista.setNumero(numero);
+            fashionista.setSexo(sexo);
+            fashionista.setPais(pais);
+            fashionista.setBairro(bairro);
+            fashionista.setComplemento(complemento);
+            fashionista.setTipo_logradouro(tipo_logradouro);
+            fashionista.setLogradouro(logradouro);
+            fashionista.setNum_logradouro(num_logradouro);
+            fashionista.setUf(uf);
             session.update(fashionista);
             tx.commit();
         } catch (HibernateException e) {
@@ -95,6 +107,7 @@ public class FashionistaDAO { //Data Access Object
             e.printStackTrace();
         } finally {
             session.close();
+            return fashionista;
         }
     }
     

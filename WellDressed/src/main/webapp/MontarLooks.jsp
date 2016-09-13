@@ -51,7 +51,7 @@
 
                     <div id="boneco">
                         </br></br>
-                        <input type="submit" value="Cadastre seus looks"  class="button big special" onclick="window.open('cadastrolooks.jsp')" style="margin-left: 70%;">
+                        <a href="cadastrolooks.jsp" class="button big special" style="margin-left: 70%;">Cadastre seus looks</a>
                         <h2>Monte seus looks!</h2>
                     </div>
                 </div>	
