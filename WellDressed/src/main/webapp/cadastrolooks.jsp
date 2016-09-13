@@ -14,7 +14,6 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
@@ -24,7 +23,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
-        <body class="homepage">
+        <body>
 
             <!-- Header -->
             <div id="header">
@@ -46,14 +45,24 @@
 
                 </div>
             </div>
-            
-                <div id="manequim">
-
-                    <div id="boneco">
-                        </br></br>
-                        <input type="submit" value="Cadastre seus looks"  class="button big special" onclick="window.open('cadastrolooks.jsp')" style="margin-left: 70%;">
-                        <h2>Monte seus looks!</h2>
-                    </div>
-                </div>	
-	</body>
+            <div id="cadastrol" style=" margin-left: 7%">
+                <display:table class="icones">
+                        
+                        <display:column />
+                        <display:column />
+                        <display:column />
+                        <display:column />
+                        </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="dress.png" title="Vestidos"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="skirt.png" title="Saias"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shirt.png" title="Blusas"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="short.png" title="Shorts"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shoe.png" title="Sapatos"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="trousers.png" title="Calças"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="coat.png" title="Casacos"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios"></display:column>	
+                    
+                </display:table>
+            </div>
+        </body>
 </html>
