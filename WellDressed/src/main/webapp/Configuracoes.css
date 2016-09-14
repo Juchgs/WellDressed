@@ -231,25 +231,6 @@ html,body {
 	border: 1px solid black;
 }
 
-a:link {
-	color: #000099;
-	text-decoration: none;
-	background-color: transparent;
-	font-weight: bold;
-}
-
-a:visited {
-	color: #000099;
-	text-decoration: none;
-	background-color: transparent;
-	font-weight: bold;
-}
-
-a:hover {
-	color: #d68000;
-	background-color: transparent;
-	font-weight: bold;
-}
 
 img {
 	border: 0px;

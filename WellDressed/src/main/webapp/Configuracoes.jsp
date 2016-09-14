@@ -73,68 +73,68 @@
                             <tr><br>
                             <tr>
                                 <td><h3>Email</h3></td>
-                                <td><input type="email" value="${sessionScope.fashionistaAtual.email}" id="email2" name="email" required="required" placeholder="Digite seu Email..." /></td>
+                                <td><input type="email" value="${sessionScope.currentSessionUser.email}" id="email2" name="email" required="required" placeholder="Digite seu Email..." /></td>
                             </tr>
                             <td><h3>Nome</h3></td> 
-                            <td><input type="text" id="nome"  name="nome" value="${sessionScope.fashionistaAtual.nome}" required="required" placeholder="Digite seu nome..."/></td>
+                            <td><input type="text" id="nome"  name="nome" value="${sessionScope.currentSessionUser.nome}" required="required" placeholder="Digite seu nome..."/></td>
                             </tr>
                              <tr>
                                 <td><h3>Senha</h3></td>
-                                <td><input type="password" id="senha2"  name="senha" value="${sessionScope.fashionistaAtual.senha}" required="required" placeholder="Digite sua Senha..."/></td>
+                                <td><input type="password" id="senha2"  name="senha" value="${sessionScope.currentSessionUser.senha}" required="required" placeholder="Digite sua Senha..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Sobrenome</h3></td>
-                                <td><input type="text" id="sobrenome"  name="sobrenome" value="${sessionScope.fashionistaAtual.sobrenome}" required="required" placeholder="Digite sua Sobrenome..."/></td>
+                                <td><input type="text" id="sobrenome"  name="sobrenome" value="${sessionScope.currentSessionUser.sobrenome}" required="required" placeholder="Digite sua Sobrenome..."/></td>
                             </tr>
                            
                             
                             <td><h3>Município</h3></td>
-                            <td><input type="text" name="municipio" class="caixaTexto" id="municipio"/></td>
+                            <td><input type="text" name="municipio" class="caixaTexto" id="municipio" value="${sessionScope.currentSessionUser.municipio}" required="required" placeholder="Digite seu Municipio..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Data Nascimento</h3></td>
-                                <td><input type="text" name="data_nascimento" id="data_nascimento"/></td>
+                                <td><input type="text" name="data_nascimento" id="data_nascimento" value="${sessionScope.currentSessionUser.data_nascimento}" required="required" placeholder="Digite sua Data de nascimento..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>DDD</h3></td>
-                                <td><input type="text" name="ddd" id="ddd"/></td>
+                                <td><input type="text" name="ddd" id="ddd" value="${sessionScope.currentSessionUser.ddd}" required="required" placeholder="Digite seu DDD.."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Número</h3></td>
-                                <td><input type="text" name="numero" id="numero"/></td>
+                                <td><input type="text" name="numero" id="numero" value="${sessionScope.currentSessionUser.numero}" required="required" placeholder="Digite seu número..."/></td>
                             </tr>
                             <td><h3>Sexo</h3></td>
-                            <td><input type="text" name="sexo" class="caixaTexto" id="sexo"/></td>
+                            <td><input type="text" name="sexo" class="caixaTexto" id="sexo" value="${sessionScope.currentSessionUser.sexo}" required="required" placeholder="Digite seu sexo..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>País</h3></td>
-                                <td><input type="text" name="pais" id="pais"/></td>
+                                <td><input type="text" name="pais" id="pais" value="${sessionScope.currentSessionUser.pais}" required="required" placeholder="Digite seu País..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Bairro</h3></td>
-                                <td><input type="text" name="bairro" id="bairro"/></td>
+                                <td><input type="text" name="bairro" id="bairro"value="${sessionScope.currentSessionUser.bairro}" required="required" placeholder="Digite seu bairro..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Complemento</h3></td>
-                                <td><input type="text" name="complemento" id="complemento"/></td>
+                                <td><input type="text" name="complemento" id="complemento" value="${sessionScope.currentSessionUser.complemento}" required="required" placeholder="Digite seu complemento..."/></td>
                             </tr>
                             <td><h3>Tipo Logradouro</h3></td>
-                            <td><input type="text" name="tipo_logradouro" class="caixaTexto" id="tipo_logradouro"/></td>
+                            <td><input type="text" name="tipo_logradouro" class="caixaTexto" id="tipo_logradouro"value="${sessionScope.currentSessionUser.tipo_logradouro}" required="required" placeholder="Digite seu tipo logradouro..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Logradouro</h3></td>
-                                <td><input type="text" name="logradouro" id="logradouro"/></td>
+                                <td><input type="text" name="logradouro" id="logradouro" value="${sessionScope.currentSessionUser.logradouro}" required="required" placeholder="Digite seu logradouro..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>Número Do Logradouro</h3></td>
-                                <td><input type="text" name="num_logradouro" id="num_logradouro"/></td>
+                                <td><input type="text" name="num_logradouro" id="num_logradouro" value="${sessionScope.currentSessionUser.num_logradouro}" required="required" placeholder="Digite seu número de logradouro..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>UF</h3></td>
-                                <td><input type="text" name="uf" id="uf"/></td>
+                                <td><input type="text" name="uf" id="uf" value="${sessionScope.currentSessionUser.uf}" required="required" placeholder="Digite sua uf..."/></td>
                             </tr>
                         </table>
-                        <input type="submit" value="Atualizar" class="button big special" id="botao3" onclick="window.open('Perfil.jsp')">
+                             <a href="Perfil.jsp" class="button big special" id="botao3">Atualizar</a>
                     </form>
                            
 </section>

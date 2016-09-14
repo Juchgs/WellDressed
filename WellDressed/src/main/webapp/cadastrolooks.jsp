@@ -1,9 +1,6 @@
+
 <!DOCTYPE HTML>
-<!--
-	Royale by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>WellDressed</title>
@@ -49,7 +46,7 @@
             </div>
             <div id="cadastrol" style=" margin-left: 7%">
                 <display:table class="icones">
-                        
+                    
                         <display:column />
                         <display:column />
                         <display:column />
@@ -66,8 +63,7 @@
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shoe.png" title="Sapatos"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="trousers.png" title="Calças"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="coat.png" title="Casacos"></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios" ></display:column>	
-                    
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios"></display:column>	
                 </display:table>
             </div>
         </body>
