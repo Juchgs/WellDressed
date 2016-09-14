@@ -63,7 +63,7 @@
             <div id="config4">
             <p> Você tem certeza que deseja excluir sua conta?</p>
             <form>
-                 <input type="submit" value="Sim" class="button big special" id="botao5">
+                 <input type="submit" value="Sim" class="button big special" id="botao5" onclick="window.open('DeletaFashionista')">
                  <input type="submit" value="Nao" class="button big special" id="botao5">
              </form>
                 </section>

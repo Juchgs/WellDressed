@@ -14,7 +14,9 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
+                <script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+                <link rel="stylesheet" type="text/css" href="Configuracoes.css">
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -53,14 +55,18 @@
                         <display:column />
                         <display:column />
                         </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="dress.png" title="Vestidos"></display:column>	
+                       
+                        
+                     
+                        <display:column title="Cadastrar" href="" type="image"class="" paramId="" paramProperty=""><img src="dress.png" title="Vestidos"><input type="file" name="Vestidos" src="dress.png" class="botao6"></display:column>	
+                                               
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="skirt.png" title="Saias"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shirt.png" title="Blusas"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="short.png" title="Shorts"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shoe.png" title="Sapatos"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="trousers.png" title="Calças"></display:column>	
                         <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="coat.png" title="Casacos"></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios"></display:column>	
+                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios" ></display:column>	
                     
                 </display:table>
             </div>
