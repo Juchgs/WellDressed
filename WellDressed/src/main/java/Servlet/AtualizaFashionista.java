@@ -38,6 +38,9 @@ public class AtualizaFashionista extends HttpServlet {
         
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
+        
+       // System.out.println(nome + " - " + email);
+        
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");
         String municipio = request.getParameter("municipio");
@@ -51,7 +54,7 @@ public class AtualizaFashionista extends HttpServlet {
                 System.err.println("Escreva direito");
         }
         fashionista.setData_nascimento(data_nascimento);
-        //Date data_nascimento = request.getParameter("data_nascimento");
+        // Date data_nascimento = request.getParameter("data_nascimento");
         Integer ddd = Integer.parseInt(request.getParameter("ddd"));
         Integer numero = Integer.parseInt(request.getParameter("numero"));
         char sexo = request.getParameter("sexo").charAt(0);

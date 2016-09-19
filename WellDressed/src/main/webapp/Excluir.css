@@ -45,13 +45,6 @@ html,body {
 	padding-right:10px;
 }
 
-.logo {
-	border-top: 1px solid #000066;
-	border-left: 1px solid #000066;
-	border-bottom: 1px solid #000066;
-	display:inline;
-	text-align: right;
-}
 
 .code {
 	font-family: verdana, arial, helvetica, "courier new", monospace;
@@ -140,4 +133,15 @@ p{
     padding-top: 23%;
  
 }
+
+h3{
+    
+    font-family: FontAwesome;
+    margin-left:27%;
+    left: 100%;
+    font-size: 200%;
+    padding-top: 23%;
+ 
+}
+
 
