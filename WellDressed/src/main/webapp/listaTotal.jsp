@@ -48,7 +48,8 @@
                         
                         <!--criar um link para o perfil-->
                         <display:column title="Visitar" href="VaiPraPaginaDoFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>
-                        <display:column title="Editar" href="CarregaFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>                        <display:column title="Deletar" href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
+                        <display:column title="Editar" href="CarregaFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>                        
+                        <display:column title="Deletar" href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
                     </display:table>
                     <br/>
                 </div>
