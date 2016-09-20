@@ -64,7 +64,7 @@ public class DeletaFashionista extends HttpServlet {
             request.getSession(true).setAttribute("fashionistas", fashionistas);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listaTotal.jsp");
+            response.sendRedirect("listatotal.jsp");
 
         } finally {
             out.close();
