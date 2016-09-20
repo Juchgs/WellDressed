@@ -33,28 +33,27 @@ public class AtualizaFashionista extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        System.out.println("YOLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+
         Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("currentSessionUser");
         FashionistaDAO fashidao = new FashionistaDAO();
-        
+
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
-        
-       // System.out.println(nome + " - " + email);
-        
+
+        // System.out.println(nome + " - " + email);
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");
         String municipio = request.getParameter("municipio");
-        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy");
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Date data_nascimento = null;
-        try{
-            data_nascimento = format.parse("data_nascimento");
-        }   
-        catch (ParseException ex){
-        
-                System.err.println("Escreva direito");
+        try {
+            data_nascimento = format.parse(request.getParameter("data_nascimento"));
+        } catch (ParseException ex) {
+
+            System.err.println("Escreva direito");
         }
         fashionista.setData_nascimento(data_nascimento);
-        // Date data_nascimento = request.getParameter("data_nascimento");
         Integer ddd = Integer.parseInt(request.getParameter("ddd"));
         Integer numero = Integer.parseInt(request.getParameter("numero"));
         char sexo = request.getParameter("sexo").charAt(0);
@@ -65,10 +64,10 @@ public class AtualizaFashionista extends HttpServlet {
         String logradouro = request.getParameter("logradouro");
         Integer num_logradouro = Integer.parseInt(request.getParameter("num_logradouro"));
         String uf = request.getParameter("uf");
-        
+
         fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro, complemento, tipo_logradouro, logradouro, num_logradouro, uf);
         request.getSession(true).setAttribute("currentSessionUser", fashionista);
-        
+
         response.sendRedirect("Configuracoes.jsp");
     }
 
