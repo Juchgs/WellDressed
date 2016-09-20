@@ -111,6 +111,27 @@ public class FashionistaDAO { //Data Access Object
         }
     }
     
+    public Fashionista desabilitaFashionista(String emailID) {
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Transaction tx = null;
+        Fashionista fashionista = null;
+        try {
+            tx = session.beginTransaction();
+            fashionista
+                    = (Fashionista) session.get(Fashionista.class, emailID);
+            fashionista.setAtivar(false);
+            tx.commit();
+        } catch (HibernateException e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            session.close();
+            return fashionista;
+        }
+    }
+    
     /* Method to DELETE an fashionista from the records */
     public void deleteFashionista(String emailID) {
         Session session = HibernateUtil.abrirSessaoComBD();

@@ -5,6 +5,7 @@
  */
 package Servlet;
 
+import hibernatePersistent.fashionista.FashionistaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -42,6 +43,10 @@ public class DesabilitarFashionista extends HttpServlet {
             out.println("<h1>Servlet DesabilitarFashionista at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+            
+            FashionistaDAO fashiondao = new FashionistaDAO();
+            String emailID = null;
+            fashiondao.desabilitaFashionista(emailID);
         } finally {
             out.close();
         }
