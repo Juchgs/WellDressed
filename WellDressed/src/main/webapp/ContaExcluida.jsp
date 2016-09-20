@@ -1,7 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://displaytag.sf.net" prefix="display"%>
-<%@page import="org.displaytag.*" %>
-<%@page import="java.util.*" %>
+<%@page import="hibernatePersistent.fashionista.Fashionista"%>
 
 <!DOCTYPE HTML>
 
@@ -15,9 +13,9 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
-        <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="listaTotal.css">
+        <link rel="stylesheet" type="text/css" href="Excluir.css">
+
         <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -27,7 +25,6 @@
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     </head>
     <body class="homepage">
-
         <!-- Header -->
         <div id="header">
             <div class="container">
@@ -36,23 +33,19 @@
                 <div id="logo">
                     <h1><a href="#">WellDressed</a></h1>
                 </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="PaginaInicial.jsp">Página Inicial</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-            <div id="perfil">
-                <div id="feed">
-                    <display:table name="${sessionScope.fashionistas}" class="dataTable">
-                        
-                        <display:column property="email" />
-                        <display:column property="nome" />
-                        <display:column property="sobrenome" />
-                        
-                        <!--criar um link para o perfil-->
-                        <display:column title="Visitar" href="VaiPraPaginaDoFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>
-                        <display:column title="Editar" href="CarregaFashionista" paramId="email" paramProperty="email"><img src="edit.png" title="Update"></display:column>                        
-                        <display:column title="Deletar" href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
-                    </display:table>
-                    <br/>
-                </div>
-            </div>       
+        <div id="perfil">
+            <div id="config4">
+                <h3>Sua conta foi excluída com sucesso!</h3>
+            </div>
+       </div>
     </body>
 </html>

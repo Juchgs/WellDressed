@@ -64,8 +64,8 @@
          <div id="perfil">
                 <div id="config4">
                     <div id = "pop">
-                        <input type="submit" value="Desativar conta" id="botao4" onclick="window.open('Desativar.jsp')">
-                        <input type="submit" value="Excluir" id="botao4" onclick="window.open('Excluir.jsp')">
+                       <input type="submit" value="Desativar conta" id="botao4" onclick="window.open('Desativar.jsp')">
+                       <input type="submit" value="Excluir" id="botao4" onclick="window.open('Excluir.jsp')">
                     </div>
              <section>
                    <form action="AtualizaFashionista" method="post">

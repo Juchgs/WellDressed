@@ -1,0 +1,9 @@
+.botao6{
+    background-image: url('dress.png');
+    height: 90%;
+    width: 80%;
+    margin-left: 100%
+}
+body{
+    background: #003;
+}

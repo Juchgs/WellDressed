@@ -1,5 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="hibernatePersistent.fashionista.Fashionista"%>
+<%@taglib uri="http://displaytag.sf.net" prefix="display"%>
+<%@page import="org.displaytag.*" %>
+
 <!DOCTYPE HTML>
 <%
     response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
@@ -23,9 +26,8 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
-        <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="Configuracoes.css">
+        <link rel="stylesheet" type="text/css" href="Excluir.css">
 
         <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
@@ -62,13 +64,15 @@
         <div id="perfil">
             <div id="config4">
             <p> Você tem certeza que deseja excluir sua conta?</p>
-            <form>
-                 <input type="submit" value="Sim" class="button big special" id="botao5">
-                 <input type="submit" value="Nao" class="button big special" id="botao5">
-             </form>
-                </section>
+            <form action="DeletaFashionista" method="post">
+                <a href="DeletaFashionista" class="button big special" id="botao5">Sim</a>
+                <a href="Configuracoes.jsp" class="button big special" id="botao5">Não</a>
+            </form></br></br>
+            <display:table name="${sessionScope.fashionistas}"> 
+                        <display:column property="email" />
+                        <display:column href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
+            </display:table>
             </div>
             </div>
-        </div>
     </body>
 </html>

@@ -1,3 +1,4 @@
+
 .dataTable {
 	background-color: white;
 	border: 1px solid #000066;
@@ -213,13 +214,7 @@ html,body {
 	padding-right:10px;
 }
 
-.logo {
-	border-top: 1px solid #000066;
-	border-left: 1px solid #000066;
-	border-bottom: 1px solid #000066;
-	display:inline;
-	text-align: right;
-}
+
 
 .code {
 	font-family: verdana, arial, helvetica, "courier new", monospace;
@@ -294,9 +289,7 @@ img {
         width: 80%;
         margin-left: 10%;
         position: relative; 
-        color: #003;
-       
-        
+        color: #003;      
 }
 table{
     
@@ -339,5 +332,8 @@ p{
     
     padding-top: 7%;
     margin-left:70%;
+}
+#poo{
+    background-image: url(dress.png);
 }
  
