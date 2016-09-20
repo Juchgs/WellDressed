@@ -68,10 +68,6 @@
                 <a href="DeletaFashionista" class="button big special" id="botao5">Sim</a>
                 <a href="Configuracoes.jsp" class="button big special" id="botao5">Não</a>
             </form></br></br>
-            <display:table name="${sessionScope.fashionistas}"> 
-                        <display:column property="email" />
-                        <display:column href="DeletaFashionista" paramId="email" paramProperty="email"><img src="delete.png" title="Delete"></display:column>
-            </display:table>
             </div>
             </div>
     </body>

@@ -8,16 +8,13 @@ package Servlet;
 import hibernatePersistent.fashionista.Fashionista;
 import hibernatePersistent.fashionista.FashionistaDAO;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.hibernate.HibernateException;
 
 public class AtualizaFashionista extends HttpServlet {
 
@@ -32,15 +29,15 @@ public class AtualizaFashionista extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+       
         Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("currentSessionUser");
         FashionistaDAO fashidao = new FashionistaDAO();
-        
+       
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
-        
+       
        // System.out.println(nome + " - " + email);
-        
+       
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");
         String municipio = request.getParameter("municipio");
@@ -48,9 +45,9 @@ public class AtualizaFashionista extends HttpServlet {
         Date data_nascimento = null;
         try{
             data_nascimento = format.parse("data_nascimento");
-        }   
+        }  
         catch (ParseException ex){
-        
+       
                 System.err.println("Escreva direito");
         }
         fashionista.setData_nascimento(data_nascimento);
@@ -65,10 +62,10 @@ public class AtualizaFashionista extends HttpServlet {
         String logradouro = request.getParameter("logradouro");
         Integer num_logradouro = Integer.parseInt(request.getParameter("num_logradouro"));
         String uf = request.getParameter("uf");
-        
+       
         fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro, complemento, tipo_logradouro, logradouro, num_logradouro, uf);
         request.getSession(true).setAttribute("currentSessionUser", fashionista);
-        
+       
         response.sendRedirect("Configuracoes.jsp");
     }
 
