@@ -40,6 +40,7 @@ public class AtualizaFashionista extends HttpServlet {
             String senha = request.getParameter("senha");
             String sobrenome = request.getParameter("sobrenome");
             String municipio = request.getParameter("municipio");
+           
             Date data_nascimento = request.getParameter("data_nascimento");
             Integer ddd = request.getParameter("ddd");
             Integer numero = request.getParameter(Integer.parseInt(numero));
