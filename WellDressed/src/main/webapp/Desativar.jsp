@@ -63,13 +63,8 @@
             <div id="config4">
             <p> Você tem certeza que deseja desativar sua conta?</p>
             <form>
-<<<<<<< HEAD
-                 <input type="submit" value="Sim" class="button big special" id="botao5" >
-                 <input type="submit" value="Nao" class="button big special" id="botao5">
-=======
-                <a href="DeletaFashionista" class="button big special" id="botao5">Sim</a>
+                <a href="DesabilitarFashionista" class="button big special" id="botao5">Sim</a>
                 <a href="Configuracoes.jsp" class="button big special" id="botao5">Não</a>
->>>>>>> a56652ba5046c54ee4b9db261f2f889496106bd4
              </form>
                 </section>
             </div>
