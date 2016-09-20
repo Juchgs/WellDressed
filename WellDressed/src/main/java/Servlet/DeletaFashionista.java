@@ -14,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -35,36 +36,16 @@ public class DeletaFashionista extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
-
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
-            String email = request.getParameter("email");
-            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
-            //         request.getParameter("cod");
-            /* daí vcs vão utilizar esse codigo
-            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
-            para chamar o objeto e deletá-lo.
-            O método no EmpregadoDAO parece funcionar blzinha...            */
+            Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("currentSessionUser");
             FashionistaDAO fashionistadao = new FashionistaDAO();
 
-            fashionistadao.deleteFashionista(email);
+            fashionistadao.deleteFashionista(fashionista.getEmail());
 
-            List<Fashionista> fashionistas = fashionistadao.listFashionista();
-            request.getSession(true).setAttribute("fashionistas", fashionistas);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listaTotal.jsp");
+            HttpSession session = request.getSession(true);
+            session.removeAttribute("currentSessionUser");
+            session.invalidate();
+
+            response.sendRedirect("ContaExcluida.jsp");
 
         } finally {
             out.close();
