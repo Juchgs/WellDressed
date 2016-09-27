@@ -8,13 +8,16 @@ package Servlet;
 import hibernatePersistent.fashionista.Fashionista;
 import hibernatePersistent.fashionista.FashionistaDAO;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.hibernate.HibernateException;
 
 public class AtualizaFashionista extends HttpServlet {
 
@@ -36,22 +39,19 @@ public class AtualizaFashionista extends HttpServlet {
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
        
-       // System.out.println(nome + " - " + email);
        
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");
         String municipio = request.getParameter("municipio");
         SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy");
         Date data_nascimento = null;
-        try{
-            data_nascimento = format.parse("data_nascimento");
-        }  
-        catch (ParseException ex){
-       
-                System.err.println("Escreva direito");
+       try {
+            data_nascimento = format.parse(request.getParameter("data_nascimento"));
+        } catch (ParseException ex) {
+
+            System.err.println("Escreva direito");
         }
         fashionista.setData_nascimento(data_nascimento);
-        // Date data_nascimento = request.getParameter("data_nascimento");
         Integer ddd = Integer.parseInt(request.getParameter("ddd"));
         Integer numero = Integer.parseInt(request.getParameter("numero"));
         char sexo = request.getParameter("sexo").charAt(0);
