@@ -45,15 +45,7 @@ public class DeletaFashionista extends HttpServlet {
             session.removeAttribute("currentSessionUser");
             session.invalidate();
 
-<<<<<<< HEAD
-            List<Fashionista> fashionistas = fashionistadao.listFashionista();
-            request.getSession(true).setAttribute("fashionistas", fashionistas);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listatotal.jsp");
-=======
             response.sendRedirect("ContaExcluida.jsp");
->>>>>>> efe8b3fb515fd98e11c753893547a5228849f6c9
 
         } finally {
             out.close();
