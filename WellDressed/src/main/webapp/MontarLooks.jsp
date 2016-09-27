@@ -56,7 +56,7 @@
         <div id="boneco2">
             </br></br>
             <a href="cadastrolooks.jsp" class="button big special" style="margin-left: 70%;">Cadastre seus looks</a>
-            <a href=".jsp" class="button big special" style="margin-left: 74.5%;">Closet</a>
+            <a href="closet.jsp" class="button big special" style="margin-left: 74.5%;">Closet</a>
 
             <h2>Monte seus looks!</h2>
             <div id="closet">
