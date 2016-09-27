@@ -1,6 +1,9 @@
-
 <!DOCTYPE HTML>
-
+<!--
+        Royale by TEMPLATED
+        templated.co @templatedco
+        Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
     <head>
         <title>WellDressed</title>
@@ -11,19 +14,19 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
-        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="Configuracoes.css">
-        <link rel="stylesheet" type="text/css" href="cadastrolooks.css">
-        <noscript>
+        
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
-        </noscript>
+        <link rel="stylesheet" href="cadastrolooks.css" type="text/css"/>
+
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    
     </head>
-    <body>
+    <body class="homepage">
 
         <!-- Header -->
         <div id="header">
@@ -46,8 +49,6 @@
             </div>
         </div>
         <div id="cadastrol" >
-
-
 
             </br></br></br></br></br></br></br>
 
