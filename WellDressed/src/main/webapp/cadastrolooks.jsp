@@ -85,7 +85,11 @@
                 <input id="fakeupload7" class="fakeupload" type="text" />
                 <input class="realupload" title="Acessórios" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
-
+            
+            <div class="caixaupload">
+                <input id="fakeupload8" class="fakeupload" type="text" />
+                <input class="realupload" title="Ternos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
         </div>
     </body>
 </html>
