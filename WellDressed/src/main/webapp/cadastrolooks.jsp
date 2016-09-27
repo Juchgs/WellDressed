@@ -2,88 +2,90 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>WellDressed</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-                <script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-                <link rel="stylesheet" type="text/css" href="Configuracoes.css">
-                 <link rel="stylesheet" type="text/css" href="cadastrolooks.css">
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-        <body>
+    <head>
+        <title>WellDressed</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/init.js"></script>
+        <link rel="stylesheet" type="text/css" href="Configuracoes.css">
+        <link rel="stylesheet" type="text/css" href="cadastrolooks.css">
+        <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    </head>
+    <body>
 
-            <!-- Header -->
-            <div id="header">
-                <div class="container">
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
 
-                    <!-- Logo -->
-                    <div id="logo">
-                        <h1><a href="#">WellDressed</a></h1>
-                    </div>
-
-                    <!-- Nav -->
-                    <nav id="nav">
-                        <ul>
-                            <li class="active"><a href="PaginaInicial2.jsp">Página Inicial</a></li>
-                            <li><a href="Perfil.jsp">Perfil</a></li>
-
-                        </ul>
-                    </nav>
-
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="#">WellDressed</a></h1>
                 </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="active"><a href="PaginaInicial2.jsp">Página Inicial</a></li>
+                        <li><a href="Perfil.jsp">Perfil</a></li>
+
+                    </ul>
+                </nav>
+
             </div>
-            <div id="cadastrol" style=" margin-left: 7%">
-                <display:table class="icones">
-                    
-                        <display:column />
-                        <display:column />
-                        <display:column />
-                        <display:column />
-                        </br></br></br></br></br></br></br></br></br></br></br></br>
-                       
-                       
-                           <!-- <form method="post" action="MontarLooks.jsp" enctype="multipart/form-data">
-                                 <fieldset>
-                               
-                                <label for="txFoto">Sua foto</label>
-                                <input type="file" name="arquivo" id="txFoto" />
-                                <img src="input[type=file]"/>
-                                <input type="submit" value="Salvar Dados" />
-                                </fieldset>
-                                </form>[
-                           
-                           input[type=file] {
-                                float: left;
-                                display: block;
-                            }
-                                .hide {
-                                    display: none;
-                                    float: left;
-                           -->
-                       
-                        
-                        <display:column title="Cadastrar" href="" type="image"  class="" paramId="" paramProperty=""><img src="dress.png" title="Vestidos"><input type="file" name="Vestidos" src="dress.png" style=" color: white; "></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="skirt.png" title="Saias"><input type="file"  name="Saias" src="dress.png" style=" color: white;"></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shirt.png" title="Blusas"><input type="file" name="Blusas" src="dress.png" style=" color: white;"></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="short.png" title="Shorts"><input type="file" name="Shorts" src="dress.png" style=" color: white;"></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="shoe.png" title="Sapatos"><input type="file" name="Sapatos" src="dress.png"style=" color: white;" ></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="trousers.png" title="Calças"><input type="file" name="Calças" src="dress.png" style=" color: white;"></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="coat.png" title="Casacos"><input type="file" name="Casacos" src="dress.png" style=" color: white;"></br></display:column>	
-                        <display:column title="Cadastrar" href="" paramId="" paramProperty=""><img src="sunglasses.png" title="Acessórios"><input type="file" name="Acessórios" src="dress.png" style=" color: white; "></br></display:column>	
-                </display:table>
+        </div>
+        <div id="cadastrol" >
+
+
+
+            </br></br></br></br></br></br></br>
+
+            <div class="caixaupload">
+                <input id="fakeupload0" class="fakeupload" type="text" />
+                <input class="realupload" title="Vestidos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
-        </body>
+            <div class="caixaupload">
+                <input id="fakeupload1" class="fakeupload"  type="text" />
+                <input class="realupload" title="Saias" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+
+            <div class="caixaupload">
+                <input id="fakeupload2" class="fakeupload" type="text" />
+                <input class="realupload" title="Blusas" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+            <div class="caixaupload">
+                <input id="fakeupload3" class="fakeupload" type="text" />
+                <input class="realupload" title="Shorts" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+
+            <div class="caixaupload">
+                <input id="fakeupload4" class="fakeupload" type="text" />
+                <input class="realupload" title="Sapatos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+            <div class="caixaupload">
+                <input id="fakeupload5" class="fakeupload" type="text" />
+                <input class="realupload" title="Calças" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+            <div class="caixaupload">
+                <input id="fakeupload6" class="fakeupload" type="text" />
+                <input class="realupload" title="Casacos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+            <div class="caixaupload">
+                <input id="fakeupload7" class="fakeupload" type="text" />
+                <input class="realupload" title="Acessórios" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+            </div>
+
+        </div>
+    </body>
 </html>

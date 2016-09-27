@@ -1,4 +1,4 @@
-#botao6{
+.botao{
     background: url('dress.png');
     height: 90%;
     width: 80%;
@@ -6,4 +6,67 @@
 }
 body{
     background: #003;
+    height: 90%;
+}
+
+input {
+    background-color: #FFF;
+    border: 0px solid #e4e4e4;
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: #333;
+    height: 130px;
+    vertical-align: middle;
+ }
+
+.realupload {
+    position: relative;
+    width: 130px;
+    float: right;
+    top: -134px;
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity:0);
+
+}
+
+#fakeupload0 {
+    background: url("dress.png") no-repeat 99% 51%;   
+}
+
+#fakeupload1 {
+    background: url("skirt.png") no-repeat 99% 51%;              
+}
+
+#fakeupload2 {
+    background: url("shirt.png") no-repeat 99% 51%;
+}
+
+#fakeupload3 {
+    background: url("short.png") no-repeat 99% 51%;
+}
+
+#fakeupload4 {
+    background: url("shoe.png") no-repeat 99% 51%;
+}
+
+#fakeupload5 {
+    background: url("trousers.png") no-repeat 99% 51%;
+}
+
+#fakeupload6 {
+    background: url("coat.png") no-repeat 99% 51%;
+}
+
+#fakeupload7 {
+    background: url("sunglasses.png") no-repeat 99% 51%;
+}
+
+.fakeupload{
+    width: 100%;
+    cursor: default;   
+}
+
+.caixaupload{
+    float: left;
 }
