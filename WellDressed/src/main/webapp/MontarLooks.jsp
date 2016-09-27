@@ -63,30 +63,30 @@
                 <div id="porta1">
                     <div id="colunas">
                         <ul>
-                            <li><img src="like.png"><img src="like.png"></a></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
                         </ul>
                     </div>
                 </div>
                 <div id="porta2">
                     <div id="colunas">
                         <ul>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a> </li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a> </li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
+                            <li><img src="images/like.png"><img src="images/like.png"></a></li>
                         </ul>
                     </div>
                     
                 </div>
                 <div id="porta3"  onclick="abre()">
-                    <img src="like.png"></a>
+                    <img src="images/like.png"></a>
 
                 </div>
                 <div id="porta4" onclick="abre()">
-                    <img src="like.png"></a>
+                    <img src="images/like.png"></a>
 
                 </div>
             </div>
