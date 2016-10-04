@@ -25,8 +25,10 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     	<script>
-		var abre = function(){
+		var abreEsquerda = function(){
                     document.getElementById('porta3').style.right = '10px';
+		}
+                var abreDireita = function(){
                     document.getElementById('porta4').style.left = '200px';
 		}
 	</script>
@@ -79,16 +81,15 @@
                             <li><img src="images/like.png"><img src="images/like.png"></a></li>
                         </ul>
                     </div>
-                    
                 </div>
-                <div id="porta3"  onclick="abre()">
+                <div id="porta3" class="porta" onclick="abreEsquerda()">
+                    <img src="images/like.png"></a>
+                </div>
+                <div id="porta4" class="porta" onclick="abreDireita()">
                     <img src="images/like.png"></a>
 
                 </div>
-                <div id="porta4" onclick="abre()">
-                    <img src="images/like.png"></a>
-
-                </div>
+                
             </div>
         </div>
     </body>

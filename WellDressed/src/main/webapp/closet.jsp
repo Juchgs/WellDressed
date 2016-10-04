@@ -43,6 +43,9 @@
                 </div>
             </div>
             <div id="closet">
+                <div id="bott">
+                    <a href="MontarLooks.jsp">Voltar</a>
+                </div>
                 <div id="colunas">
                     <ul>
                         <li><p>Vestido</p></li>

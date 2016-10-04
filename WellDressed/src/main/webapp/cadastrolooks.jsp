@@ -49,8 +49,8 @@
             </div>
         </div>
         <div id="cadastrol" >
-
-            </br></br></br></br></br></br></br>
+            <a href="MontarLooks.jsp" class="button big special" id="bota">Voltar</a>
+            </br></br></br></br></br></br>
 
             <div class="caixaupload">
                 <input id="fakeupload0" class="fakeupload" type="text" />
