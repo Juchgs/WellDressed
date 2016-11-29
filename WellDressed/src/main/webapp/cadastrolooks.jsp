@@ -51,6 +51,15 @@
         <div id="cadastrol" >
             <a href="MontarLooks.jsp" class="button big special" id="bota">Voltar</a>
             </br></br></br></br></br></br>
+            
+            <form method="POST" action="upload" enctype="multipart/form-data" >
+                File:
+                <input type="file" name="file" id="file" /> <br/>
+                Destination:
+                <input type="text" value="/tmp" name="destination"/>
+                </br>
+                <input type="submit" value="Upload" name="upload" id="upload" />
+            </form>
 
             <div class="caixaupload">
                 <input id="fakeupload0" class="fakeupload" type="text" />
