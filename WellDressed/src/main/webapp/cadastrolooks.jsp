@@ -50,29 +50,32 @@
         </div>
         <div id="cadastrol" >
             <a href="MontarLooks.jsp" class="button big special" id="bota">Voltar</a>
+            
+            <p id="bo" style="color: white">Clique nos botões para cadastras seus Looks !!!</p>
+           
             </br></br></br></br></br></br>
 
             <div class="caixaupload">
                 <input id="fakeupload0" class="fakeupload" type="text" />
-                <input class="realupload" title="Vestidos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Vestidos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
             <div class="caixaupload">
                 <input id="fakeupload1" class="fakeupload"  type="text" />
-                <input class="realupload" title="Saias" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Saias" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
 
             <div class="caixaupload">
-                <input id="fakeupload2" class="fakeupload" type="text" />
-                <input class="realupload" title="Blusas" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input  id="fakeupload2" class="fakeupload" type="text" />
+                <input accept="image/png" class="realupload" title="Blusas" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
             <div class="caixaupload">
                 <input id="fakeupload3" class="fakeupload" type="text" />
-                <input class="realupload" title="Shorts" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Shorts" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
 
             <div class="caixaupload">
                 <input id="fakeupload4" class="fakeupload" type="text" />
-                <input class="realupload" title="Sapatos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Sapatos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
             <div class="caixaupload">
                 <input id="fakeupload5" class="fakeupload" type="text" />
@@ -80,16 +83,16 @@
             </div>
             <div class="caixaupload">
                 <input id="fakeupload6" class="fakeupload" type="text" />
-                <input class="realupload" title="Casacos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Casacos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
             <div class="caixaupload">
                 <input id="fakeupload7" class="fakeupload" type="text" />
-                <input class="realupload" title="Acessórios" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Acessórios" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
             
             <div class="caixaupload">
                 <input id="fakeupload8" class="fakeupload" type="text" />
-                <input class="realupload" title="Ternos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
+                <input accept="image/png" class="realupload" title="Ternos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
         </div>
     </body>

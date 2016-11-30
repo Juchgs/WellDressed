@@ -48,7 +48,7 @@ body{
 }
 
 #roupas{
-    background-color: #CC6666;
+    background-color: white;
     height:100%;
     width: 73%;
     float: right;
@@ -74,4 +74,9 @@ body{
     font-size: 20px;
     text-decoration: none;
     text-align:center;
+}
+#prox{
+    
+    background: url("plus.png");
+     margin-top: 100%;
 }

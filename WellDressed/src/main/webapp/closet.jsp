@@ -59,6 +59,7 @@
                     </ul>
                 </div>
                 <div id="roupas">
+                    <input type="image" src="images/oi.png">
                     
                 </div>
             </div>	
