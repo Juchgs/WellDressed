@@ -13,8 +13,8 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="Configuracoes.css">
-        <link rel="stylesheet" type="text/css" href="cadastrolooks.css">
+        <link rel="stylesheet" type="text/css" href="css/Configuracoes.css">
+        <link rel="stylesheet" type="text/css" href="css/cadastrolooks.css">
         <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />

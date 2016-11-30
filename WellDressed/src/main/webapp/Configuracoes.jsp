@@ -29,7 +29,7 @@
         <script src="js/skel.min.js"></script>
         
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="Configuracoes.css">
+        <link rel="stylesheet" type="text/css" href="css/Configuracoes.css">
         <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />

@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/skel-noscript.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-desktop.css" />
-                <link rel="stylesheet" href="closet.css" type="text/css" >
+                <link rel="stylesheet" href="css/closet.css" type="text/css" >
 		
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->

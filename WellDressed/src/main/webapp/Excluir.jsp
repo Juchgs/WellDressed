@@ -27,7 +27,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="Excluir.css">
+        <link rel="stylesheet" type="text/css" href="css/Excluir.css">
 
         <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
