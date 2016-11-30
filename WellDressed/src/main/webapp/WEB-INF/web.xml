@@ -32,6 +32,10 @@
         <servlet-name>DesabilitarFashionista</servlet-name>
         <servlet-class>Servlet.DesabilitarFashionista</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>Servlet.FileUploadServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroFashionista</servlet-name>
         <url-pattern>/CadastroFashionista</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>DesabilitarFashionista</servlet-name>
         <url-pattern>/DesabilitarFashionista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

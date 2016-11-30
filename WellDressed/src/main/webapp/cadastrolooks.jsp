@@ -16,15 +16,15 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-        
+       
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
-        <link rel="stylesheet" href="cadastrolooks.css" type="text/css"/>
+        <link rel="stylesheet" href="css/cadastrolooks.css" type="text/css"/>
 
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-    
+   
     </head>
     <body class="homepage">
 
@@ -54,6 +54,15 @@
             <p id="bo" style="color: white">Clique nos botões para cadastras seus Looks !!!</p>
            
             </br></br></br></br></br></br>
+           
+            <form method="POST" action="upload" enctype="multipart/form-data" >
+                File:
+                <input type="file" name="file" id="file" /> <br/>
+                Destination:
+                <input type="text" value="/tmp" name="destination"/>
+                </br>
+                <input type="submit" value="Upload" name="upload" id="upload" />
+            </form>
 
             <div class="caixaupload">
                 <input id="fakeupload0" class="fakeupload" type="text" />
@@ -89,7 +98,7 @@
                 <input id="fakeupload7" class="fakeupload" type="text" />
                 <input accept="image/png" class="realupload" title="Acessórios" type="file" onchange="this.form.fakeupload.value = this.value;"/>
             </div>
-            
+           
             <div class="caixaupload">
                 <input id="fakeupload8" class="fakeupload" type="text" />
                 <input accept="image/png" class="realupload" title="Ternos" type="file" onchange="this.form.fakeupload.value = this.value;"/>
