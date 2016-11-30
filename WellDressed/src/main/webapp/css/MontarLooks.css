@@ -38,25 +38,23 @@ body{
 }
 
 #porta3{
-    height:100%;
-    width:30%; 
-    background: #840002;
-    position:relative;
     right: -200px;
     top:-540px;
-    transition: 0.8s ease-in;
 }
 
 #porta4{
-    height:100%;
-    width:310px; 
-    background: #840002;
-    position:relative;
     float:right;
     margin-right:200px;
     top:-1080px;
-    transition: 0.8s ease-in;
+}
 
+.porta{
+    
+    height:100%;
+    width:30%;
+    background: #840002;
+    position:relative;
+    transition: 0.8s ease-in;
 }
 
 #colunas 
@@ -85,7 +83,7 @@ body{
 
 #porta4 img{
     float:left;
-    margin-top: 78%;
+    margin-top: 75%;
     margin-left: 4%;
 }
 

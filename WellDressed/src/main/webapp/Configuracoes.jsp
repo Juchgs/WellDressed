@@ -27,14 +27,12 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
-        
         <script src="js/init.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/Configuracoes.css">
-        <noscript>
+
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
-        </noscript>
+        <link rel="stylesheet" type="text/css" href="css/Configuracoes.css">
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     </head>
@@ -60,7 +58,7 @@
 
             </div>
         </div>
-     
+    
          <div id="perfil">
                 <div id="config4">
                     <div id = "pop">
@@ -75,7 +73,7 @@
                                 <td><h3>Email</h3></td>
                                 <td><input type="email" value="${sessionScope.currentSessionUser.email}" id="email2" name="email" required="required" placeholder="Digite seu Email..." /></td>
                             </tr>
-                            <td><h3>Nome</h3></td> 
+                            <td><h3>Nome</h3></td>
                             <td><input type="text" id="nome"  name="nome" value="${sessionScope.currentSessionUser.nome}" required="required" placeholder="Digite seu nome..."/></td>
                             </tr>
                              <tr>
@@ -86,8 +84,8 @@
                                 <td><h3>Sobrenome</h3></td>
                                 <td><input type="text" id="sobrenome"  name="sobrenome" value="${sessionScope.currentSessionUser.sobrenome}" required="required" placeholder="Digite sua Sobrenome..."/></td>
                             </tr>
+                          
                            
-                            
                             <td><h3>Município</h3></td>
                             <td><input type="text" name="municipio" class="caixaTexto" id="municipio" value="${sessionScope.currentSessionUser.municipio}" required="required" placeholder="Digite seu Municipio..."/></td>
                             </tr>
@@ -135,9 +133,8 @@
                             </tr>
                         </table>
                              <a href="Perfil.jsp" class="button big special" id="botao3">Atualizar</a>
-                    </form>
-                           
-</section>
+                    </form>           
+                </section>
             </div>
         </div>
     </body>

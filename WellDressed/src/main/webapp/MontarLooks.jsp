@@ -16,7 +16,7 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-        
+       
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
@@ -24,12 +24,14 @@
 
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-    	<script>
-		var abre = function(){
+        <script>
+        var abreEsquerda = function(){
                     document.getElementById('porta3').style.right = '10px';
+        }
+                var abreDireita = function(){
                     document.getElementById('porta4').style.left = '200px';
-		}
-	</script>
+        }
+    </script>
     </head>
     <body class="homepage">
 
@@ -63,32 +65,31 @@
                 <div id="porta1">
                     <div id="colunas">
                         <ul>
-                            <li><img src="like.png"><img src="like.png"></a></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
                         </ul>
                     </div>
                 </div>
                 <div id="porta2">
                     <div id="colunas">
                         <ul>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a> </li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
-                            <li><img src="like.png"><img src="like.png"></a></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
+                            <li><img src="css/images/like.png"><img src="css/images/like.png"></li>
                         </ul>
                     </div>
-                    
                 </div>
-                <div id="porta3"  onclick="abre()">
-                    <img src="like.png"></a>
+                <div id="porta3" class="porta" onclick="abreEsquerda()">
+                    <img src="css/images/like.png">
+                </div>
+                <div id="porta4" class="porta" onclick="abreDireita()">
+                    <img src="css/images/like.png">
 
                 </div>
-                <div id="porta4" onclick="abre()">
-                    <img src="like.png"></a>
-
-                </div>
+               
             </div>
         </div>
     </body>

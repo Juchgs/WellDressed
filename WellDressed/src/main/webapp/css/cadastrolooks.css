@@ -31,35 +31,39 @@ input {
 }
 
 #fakeupload0 {
-    background: url("dress.png") no-repeat 99% 51%;   
+    background: url("images/dress.png") no-repeat 99% 51%;   
 }
 
 #fakeupload1 {
-    background: url("skirt.png") no-repeat 99% 51%;              
+    background: url("images/skirt.png") no-repeat 99% 51%;              
 }
 
 #fakeupload2 {
-    background: url("shirt.png") no-repeat 99% 51%;
+    background: url("images/shirt.png") no-repeat 99% 51%;
 }
 
 #fakeupload3 {
-    background: url("short.png") no-repeat 99% 51%;
+    background: url("images/short.png") no-repeat 99% 51%;
 }
 
 #fakeupload4 {
-    background: url("shoe.png") no-repeat 99% 51%;
+    background: url("images/shoe.png") no-repeat 99% 51%;
 }
 
 #fakeupload5 {
-    background: url("trousers.png") no-repeat 99% 51%;
+    background: url("images/trousers.png") no-repeat 99% 51%;
 }
 
 #fakeupload6 {
-    background: url("coat.png") no-repeat 99% 51%;
+    background: url("images/coat.png") no-repeat 99% 51%;
 }
 
 #fakeupload7 {
-    background: url("sunglasses.png") no-repeat 99% 51%;
+    background: url("images/sunglasses.png") no-repeat 99% 51%;
+}
+
+#fakeupload8 {
+    background: url("images/tuxedo.png") no-repeat 99% 51%;
 }
 
 .fakeupload{
@@ -69,4 +73,13 @@ input {
 
 .caixaupload{
     float: left;
+}
+
+#bota{
+    margin-top: 5%;
+    margin-left: 87%;
+}
+
+#cadastrol{
+    margin-left: 4%;
 }
