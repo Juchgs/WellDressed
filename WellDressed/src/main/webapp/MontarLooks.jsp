@@ -87,7 +87,6 @@
                 </div>
                 <div id="porta4" class="porta" onclick="abreDireita()">
                     <img src="css/images/like.png">
-
                 </div>
                
             </div>
