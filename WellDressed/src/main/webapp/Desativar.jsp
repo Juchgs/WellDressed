@@ -62,7 +62,7 @@
         <div id="perfil">
             <div id="config4">
             <p> Você tem certeza que deseja desativar sua conta?</p>
-            <form>
+            <form action="Desabilitar" method="post">
                 <a href="DesabilitarFashionista" class="button big special" id="botao5">Sim</a>
                 <a href="Configuracoes.jsp" class="button big special" id="botao5">Não</a>
              </form>

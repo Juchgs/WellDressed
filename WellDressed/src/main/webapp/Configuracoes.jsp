@@ -132,7 +132,7 @@
                                 <td><input type="text" name="uf" id="uf" value="${sessionScope.currentSessionUser.uf}" required="required" placeholder="Digite sua uf..."/></td>
                             </tr>
                         </table>
-                             <a href="Perfil.jsp" class="button big special" id="botao3">Atualizar</a>
+                        <input type="submit" value="Atualizar" id="botao4">
                     </form>           
                 </section>
             </div>
