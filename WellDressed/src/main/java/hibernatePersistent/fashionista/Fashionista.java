@@ -5,6 +5,7 @@
  */
 package hibernatePersistent.fashionista;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.persistence.*;
 
@@ -109,6 +110,13 @@ public class Fashionista {
     public Date getData_nascimento() {
         return data_nascimento;
     }
+    
+    public String getData_nascimento_Formatada() {
+        String dataFormatada;
+        dataFormatada = new SimpleDateFormat("dd/MM/yyyy").format(data_nascimento);
+        return dataFormatada;
+    }
+    
     public void setData_nascimento(Date data_nascimento) {
         this.data_nascimento = data_nascimento;
     }
@@ -184,7 +192,6 @@ public class Fashionista {
         this.num_logradouro = num_logradouro;
     }
 
-    
     public String getUf() {
         return uf;
     }

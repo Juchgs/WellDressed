@@ -91,7 +91,7 @@
                             </tr>
                             <tr>
                                 <td><h3>Data Nascimento</h3></td>
-                                <td><input type="text" name="data_nascimento" id="data_nascimento" value="${sessionScope.currentSessionUser.data_nascimento}" required="required" placeholder="Digite sua Data de nascimento..."/></td>
+                                <td><input type="text" name="data_nascimento" id="data_nascimento" value="${sessionScope.currentSessionUser.getData_nascimento_Formatada()}" required="required" placeholder="Digite sua Data de nascimento..."/></td>
                             </tr>
                             <tr>
                                 <td><h3>DDD</h3></td>
@@ -132,8 +132,9 @@
                                 <td><input type="text" name="uf" id="uf" value="${sessionScope.currentSessionUser.uf}" required="required" placeholder="Digite sua uf..."/></td>
                             </tr>
                         </table>
-                        <input type="submit" value="Atualizar" id="botao4">
-                    </form>           
+                    
+                            <input type ="submit" id="botao6" value ="Atualizar"  class="button big special" style="margin-left: 32.5%;"/>
+                   </form>           
                 </section>
             </div>
         </div>
