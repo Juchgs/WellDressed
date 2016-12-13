@@ -42,14 +42,27 @@
                 <div id="logo">
                     <h1><a href="#">WellDressed</a></h1>
                 </div>
-
+                
                 <!-- Nav -->
-                <nav id="nav">
+                <nav id="nav">               
                     <ul>
-                        <li><a href="PaginaInicial2.jsp">Página Inicial</a></li>
-                        <li class="active"><a href="Perfil.jsp">Perfil</a></li>
-                        <li><input type="submit" name="Listar" id="bot" value="Fashionistas" onclick="window.open('ListaFashionista')"/></li>
-                        <li><form action="Logout" method="post">
+                        <li>
+                            <div id="search">
+                                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                                <img src="css/images/search.png" id="btnBusca" alt="Buscar"/>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="PaginaInicial2.jsp">Página Inicial</a>
+                        </li>
+                        <li class="active">
+                            <a href="Perfil.jsp">Perfil</a>
+                        </li>
+                        <li>
+                            <input type="submit" name="Listar" id="bot" value="Fashionistas" onclick="window.open('ListaFashionista')"/>
+                        </li>
+                        <li>
+                            <form action="Logout" method="post">
                                 <input type="submit" name="Sair" id="bot" value="Sair"/>
                             </form>
                         </li>

@@ -793,6 +793,34 @@
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
+#search{
+/*    position: absolute;*/
+    
+    background-color:white;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    /*margin-left: 23em;*/
+    margin-top: -.2em;
+}
+
+#txtBusca{
+  background-color:transparent;
+  padding-left:10px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:19px;
+  width:260px;
+  position:relative;
+  top:-5px;
+}
+
+#btnBusca{
+  position:relative;
+  right:5px;  
+  top:3px;
+}
 
 #nav
 {
@@ -1093,3 +1121,4 @@
 		color: rgba(255,255,255,.3);
 	}
 	
+     
