@@ -38,7 +38,7 @@ public class AtualizaFashionista extends HttpServlet {
       
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
-      
+
         System.out.println("XUBLANGA!");
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");

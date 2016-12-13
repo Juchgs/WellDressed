@@ -34,6 +34,12 @@
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
+                        <li>
+                            <div id="search">
+                                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                                <img src="css/images/search.png" id="btnBusca" alt="Buscar"/>
+                            </div>
+                        </li>
                         <li class="active"><a href="PaginaInicial2.jsp">Página Inicial</a></li>
                         <li><a href="Perfil.jsp">Perfil</a></li>
                          <li><form action="Logout" method="post">
