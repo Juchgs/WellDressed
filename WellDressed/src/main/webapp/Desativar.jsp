@@ -61,10 +61,10 @@
         </div>
         <div id="perfil">
             <div id="config4">
-            <p> Você tem certeza que deseja desativar sua conta?</p>
-            <form >
-                <a href="DesabilitarFashionista" class="button big special" id="botao5">Sim</a>
-                <a href="Configuracoes.jsp" class="button big special" id="botao5">Não</a>
+            <p>Você tem certeza que deseja ativar/desativar sua conta?</p>
+            <form>
+                <a href="AtivarFashionista" class="button big special" id="botao5">Ativar</a>
+                <a href="DesabilitarFashionista" class="button big special" id="botao5">Desativar</a>
              </form>
                 </section>
             </div>
