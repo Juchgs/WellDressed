@@ -28,7 +28,7 @@
         var abreEsquerda = function(){
                     document.getElementById('porta3').style.right = '10px';
         }
-                var abreDireita = function(){
+        var abreDireita = function(){
                     document.getElementById('porta4').style.left = '200px';
         }
     </script>
