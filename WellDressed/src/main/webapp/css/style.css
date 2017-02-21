@@ -686,36 +686,46 @@
 #Config{
     padding-right:120px;
     background: #000033;
-    height: 150px;
+    height: 350px;
 }
 
 #Config table{
     
-    float: right;
+   position:absolute;
 }
-
 
 #Config a{
     color: white;
-    padding-left: 20px;
-
+    padding-left: 199px;
+  
+    
 }
 
 #Config h1{
     position: absolute;
     color: white;
     float: right;
-    padding-top: 60px;
+    padding-top: 200px;
     float: left;
-    left: 11em;
+    left: 38em;
+
 }
  #Config img{
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-left: 500px;
+    padding-top: 60px;
  }
  #Config table tr td{
+     
+      padding-right:20px;
       padding-top: 100px;
+      
  }
+ #Config table tr td a{
+     
+     text-decoration:none; 
+     font-size: 16px;
+ }
+ 
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
@@ -802,6 +812,7 @@
     width:300px;
     /*margin-left: 23em;*/
     margin-top: -.2em;
+    margin-right: 100px;
 }
 
 #txtBusca{
@@ -939,8 +950,8 @@
 
         #perfil
         {
-            background: url(http://1.bp.blogspot.com/_khrLYQV77Rg/TGNb1JQPdKI/AAAAAAAABi8/fhIj0LWr2rQ/s1600/media+tumblr+audrey+hepburn+complex.jpg);
-            height: 1000px;
+            background-color: #003;
+            height: 1000px;  
         }
       
 /*********************************************************************************/
@@ -959,11 +970,12 @@
 
         #feed
         {
-            background: #ffcccc;
+            background: white;
             height: 100%;
             width: 80%;
             margin-left: 10%;
             position: relative;
+            
         }
         
         #feedSu
@@ -985,21 +997,20 @@
         }
         #feed2
         {
-            background:#B22222;
-            height: 30px;
+            background: white;
+            height: 40px;
             width: 100%;
             position: relative;
         }
         #feed2 table{
-
           float:right;
+      
         }
-
-
         #feed2 a{
+            text-decoration: none;
             color: white;
-            padding-left: 20px;
-
+            padding-left: 30px;
+             
         }
         
 /*********************************************************************************/
@@ -1120,5 +1131,11 @@
 		text-decoration: none;
 		color: rgba(255,255,255,.3);
 	}
+        
+        #campos table tr{
+            padding-right:120px;
+            background: #000033;
+            height: 300px;
+        }
 	
      

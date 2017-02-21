@@ -43,8 +43,7 @@ body{
 }
 
 #porta4{
-    float:right;
-    margin-right:200px;
+    left: 550px;
     top:-1080px;
 }
 
