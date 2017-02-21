@@ -32,6 +32,32 @@
         </noscript>
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+  <script>
+  
+    $( "#txtBusca" ).autocomplete({
+      source: function( request, response ) {
+        $.ajax( {
+          url: "https://jqueryui.com/resources/demos/autocomplete/search.php?term=coo",
+          dataType: "jsonp",
+          data: {
+            term: request.term
+          },
+          success: function( data ) {
+            response( data );
+          }
+        } );
+      },
+      minLength: 2,
+      select: function( event, ui ) {
+        log( "Selected: " + ui.item.value + " aka " + ui.item.id );
+      }
+    } );
+  } );
+  </script>
     </head>
     <body class="homepage">
         <!-- Header -->
@@ -42,6 +68,8 @@
                 <div id="logo">
                     <h1><a href="#">WellDressed</a></h1>
                 </div>
+                 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
                 
                 <!-- Nav -->
                 <nav id="nav">               
