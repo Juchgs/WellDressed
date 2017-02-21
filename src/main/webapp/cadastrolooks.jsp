@@ -51,10 +51,6 @@
         <div id="cadastrol" >
             <a href="MontarLooks.jsp" class="button big special" id="bota">Voltar</a>
             
-            <!-- Testando o Modal -->
-            
-
-            <!-- -->
             <p id="bo" style="color: white">Clique nos botões para cadastrar seus Looks !!!</p>
            
             </br></br></br></br></br></br>

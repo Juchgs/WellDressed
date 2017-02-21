@@ -1,6 +1,6 @@
 body{
-    background: url("https://s-media-cache-ak0.pinimg.com/236x/a9/fd/94/a9fd948d56b9e1ca7dfdcb0e9cbd0958.jpg");
-
+    background-color: #003/*url("https://s-media-cache-ak0.pinimg.com/736x/6e/f6/bd/6ef6bd00dd18240c476bbd5cc4d81dea.jpg")*/;
+/*("https://s-media-cache-ak0.pinimg.com/236x/a9/fd/94/a9fd948d56b9e1ca7dfdcb0e9cbd0958.jpg")*/
 }
 
 #closet{
@@ -21,29 +21,32 @@ body{
 {
    display: inline-block;
    padding: 8px;
-   border: #CC6666 solid 5px;
-   width: 150px;
-   margin-bottom: 10px;
-   background-color: #993333;
+   text-align:center;
+   border-radius: 20px 20px 20px 20px;
+   /*border: #B22222 solid 1px;*/
+   width: 135px;
+   margin-bottom: 15px; /*dá espaço entre as listas*/
+   background-color: #B22222/*#B22222*/; /*Muda a cor do botão da "lista""*/
+   
 }
 
 #colunas ul li p
 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: white;
   font-family: "Raleway",sans-serif;
   font-size: 20px;
   text-align:center;
 }
 
-#colunas ul li p:hover
+#colunas ul li:hover
 {
-  background-color: #CC6666;
- 
+  background-color: #840002/*#CC6666;*/ /*muda a cor do botão da "lista" quando passa o mouse*/
+  
 }
 #colunas ul li a:active
 {
-  background-color: #ff8f00; 
+  background-color: #ff8f00;
   
 }
 
@@ -56,18 +59,20 @@ body{
     margin-right: 5%;
 }
 
+/*Botão Voltar*/
 #bott{
-    background-color: #993333;
+    background-color: #B22222/*#993333*/;
     border-radius: 20px 20px 20px 20px;
-    border: #CC6666 solid 5px;
-    height:5%;
+    /*border: #B22222 solid 5px;*/
+    height: 5%;
     width: 10%;
     text-align:center;
     margin-top: 5%;
     margin-left: 80%;
-    padding-top: 6px;
+    padding-top: 10px;
     
 }
+
 #bott a{
     color: white;
     font-family: "Raleway",sans-serif;
@@ -75,6 +80,13 @@ body{
     text-decoration: none;
     text-align:center;
 }
+
+#bott:hover
+{
+  background-color: #840002/*#CC6666;*/ /*muda a cor do botão da "lista" quando passa o mouse*/
+  
+}
+
 #prox{
     
     background: url("plus.png");
