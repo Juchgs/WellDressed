@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Royale by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
 		<title>WellDressed</title>
@@ -12,12 +16,11 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
-                
-		<link rel="stylesheet" href="css/skel-noscript.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-desktop.css" />
-                <link rel="stylesheet" href="css/closet.css" type="text/css" >
-		
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
@@ -40,28 +43,14 @@
 
                         </ul>
                     </nav>
+
                 </div>
             </div>
-            <div id="closet">
-                <div id="bott">
-                    <a href="MontarLooks.jsp">Voltar</a>
-                </div>
-                <div id="colunas">
-                    <ul>
-                        <li><p>Vestido</p></li>
-                        <li><p>Saia</p></li>
-                        <li><p>Blusa</p></li>
-                        <li><p>Short</p></li>
-                        <li><p>Sapato</p></li>
-                        <li><p>Calça</p></li>
-                        <li><p>Casaco</p></li>
-                        <li><p>Acessórios</p></li>
-                    </ul>
-                </div>
-                <div id="roupas">
-                    <!--<input type="image" src="images/oi.png">-->
-                    
-                </div>
-            </div>	
+            
+                <div id="manequim">
+                    <div id="boneco">
+                        <h2>Escolha seu manequim!</h2>
+                    </div>
+                </div>	
 	</body>
 </html>

@@ -55,11 +55,11 @@
                         <li><p>Sapato</p></li>
                         <li><p>Calça</p></li>
                         <li><p>Casaco</p></li>
-                        <li><p>Acessórios</p></li>
+                        <li><p>Acessório</p></li>
                     </ul>
                 </div>
                 <div id="roupas">
-                    <!--<input type="image" src="images/oi.png">-->
+                    <input type="image" src="images/oi.png">
                     
                 </div>
             </div>	
