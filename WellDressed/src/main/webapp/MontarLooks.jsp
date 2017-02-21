@@ -26,10 +26,14 @@
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
         <script>
         var abreEsquerda = function(){
-                    document.getElementById('porta3').style.right = '10px';
+                    document.getElementById('porta3').style.right = '5px';
         }
-                var abreDireita = function(){
-                    document.getElementById('porta4').style.left = '200px';
+
+        var abreDireita = function(){
+
+       var abreDireita = function(){
+                    document.getElementById('porta4').style.left = '750px';
+
         }
     </script>
     </head>
@@ -87,6 +91,7 @@
                 </div>
                 <div id="porta4" class="porta" onclick="abreDireita()">
                     <img src="css/images/like.png">
+
                 </div>
                
             </div>

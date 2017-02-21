@@ -77,7 +77,7 @@
                         <li>
                             <div id="search">
                                 <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                                <img src="css/images/search.png" id="btnBusca" alt="Buscar"/>
+                                <img src="css/images/lupa2.png" id="btnBusca" alt="Buscar"/>
                             </div>
                         </li>
                         <li>
@@ -86,9 +86,9 @@
                         <li class="active">
                             <a href="Perfil.jsp">Perfil</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <input type="submit" name="Listar" id="bot" value="Fashionistas" onclick="window.open('ListaFashionista')"/>
-                        </li>
+                        </li>-->
                         <li>
                             <form action="Logout" method="post">
                                 <input type="submit" name="Sair" id="bot" value="Sair"/>
@@ -101,19 +101,22 @@
         <div id="TopUser">
             <div id="Config">
                 <h1><%=usuario.getNome()%></h1>
-                <img src="http://www.clicrbs.com.br/rbs/image/17596781.jpg"/>
+                <img src="css/images/user.png"/>
+               
+                <table>
+                  <tr>
+                            <td><a href="MontarLooks.jsp">MontarLooks</a></td> 
+                            <td><a href="Configuracoes.jsp">Configurações</a></td>
+                            <td><a href="Fashionistas.jsp" value="Fashionistas" onclick="window.open('ListaFashionista')">Fashionistas</a></td>
+                   </tr>
+                </table >
             </div>
+                </div>
         </div>
         <div id="perfil">
             <div id="feed"> 
                 <div id="feed2">
-                    <table>
-                        <tr>
-                            <td><a href="MontarLooks.jsp">MontarLooks</a></td> 
-                            <td><a href="Configuracoes.jsp">Configurações</a></td>
-                            <td><a href="Fashionistas.jsp">Fashionistas</a></td>
-                        </tr>
-                    </table>
+              
                 </div>
             </div>
         </div>
