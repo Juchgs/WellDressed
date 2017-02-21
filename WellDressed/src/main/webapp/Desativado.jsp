@@ -44,7 +44,7 @@
         </div>
         <div id="perfil">
             <div id="config4">
-                <h3>Sua conta foi excluída com sucesso!</h3>
+                <h3>Sua conta foi desativada com sucesso!</h3>
             </div>
        </div>
     </body>

@@ -32,13 +32,13 @@ public class AtualizaFashionista extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+      
         Fashionista fashionista = (Fashionista) request.getSession(true).getAttribute("currentSessionUser");
         FashionistaDAO fashidao = new FashionistaDAO();
-       
+      
         String email = request.getParameter("email");
         String nome = request.getParameter("nome");
-       
+
         System.out.println("XUBLANGA!");
         String senha = request.getParameter("senha");
         String sobrenome = request.getParameter("sobrenome");
@@ -62,10 +62,10 @@ public class AtualizaFashionista extends HttpServlet {
         String logradouro = request.getParameter("logradouro");
         Integer num_logradouro = Integer.parseInt(request.getParameter("num_logradouro"));
         String uf = request.getParameter("uf");
-       
+      
         fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro, complemento, tipo_logradouro, logradouro, num_logradouro, uf);
         request.getSession(true).setAttribute("currentSessionUser", fashionista);
-       
+      
         response.sendRedirect("Configuracoes.jsp");
     }
 

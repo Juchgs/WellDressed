@@ -106,14 +106,17 @@ public class Fashionista {
         this.municipio = municipio;
     }
 
-   
     public Date getData_nascimento() {
         return data_nascimento;
     }
     
     public String getData_nascimento_Formatada() {
         String dataFormatada;
-        dataFormatada = new SimpleDateFormat("dd/MM/yyyy").format(data_nascimento);
+        if (data_nascimento == null) {
+            dataFormatada = "";
+        } else {
+            dataFormatada = new SimpleDateFormat("dd/MM/yyyy").format(data_nascimento);
+        }
         return dataFormatada;
     }
     
