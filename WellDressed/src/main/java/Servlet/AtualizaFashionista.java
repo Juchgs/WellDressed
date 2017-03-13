@@ -62,8 +62,9 @@ public class AtualizaFashionista extends HttpServlet {
         String logradouro = request.getParameter("logradouro");
         Integer num_logradouro = Integer.parseInt(request.getParameter("num_logradouro"));
         String uf = request.getParameter("uf");
+        String url_imagem = request.getParameter("url_imagem");
       
-        fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro, complemento, tipo_logradouro, logradouro, num_logradouro, uf);
+        fashionista = fashidao.updateFashionista(fashionista.getEmail(), email, nome, senha, sobrenome, municipio, data_nascimento, ddd, numero, sexo, pais, bairro, complemento, tipo_logradouro, logradouro, num_logradouro, uf, url_imagem);
         request.getSession(true).setAttribute("currentSessionUser", fashionista);
       
         response.sendRedirect("Configuracoes.jsp");
