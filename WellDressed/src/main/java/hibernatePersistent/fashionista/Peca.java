@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table (name = "peca")
 public class Peca {
@@ -41,7 +42,7 @@ public class Peca {
   private Integer cod_tipo_peca;
   
   @Column(name = "foto")
-  private Byte foto;
+  private byte[] foto;
 
     /**
      * @return the cod_peca
@@ -158,14 +159,14 @@ public class Peca {
     /**
      * @return the foto
      */
-    public Byte getFoto() {
+    public byte[] getFoto() {
         return foto;
     }
 
     /**
      * @param foto the foto to set
      */
-    public void setFoto(Byte foto) {
+    public void setFoto(byte[] foto) {
         this.foto = foto;
     }
     
