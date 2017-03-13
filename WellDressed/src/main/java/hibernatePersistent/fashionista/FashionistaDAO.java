@@ -9,6 +9,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 
 public class FashionistaDAO { //Data Access Object
 
@@ -72,7 +73,25 @@ public class FashionistaDAO { //Data Access Object
         }
         return fashionistas;
     }
+ 
+    public List listFashionistaByName(String name) {
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Transaction tx = null;
+        List<Fashionista> fashionistas = null;
+        try {
 
+            fashionistas = session.createCriteria(Fashionista.class).add( Restrictions.like("nome", name) ).list();
+
+        } catch (HibernateException e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return fashionistas;
+    }
     /* Method to UPDATE salary for an fashionista */
     public Fashionista updateFashionista(String emailID, String email, String nome, String senha, String sobrenome, String municipio, Date data_nascimento, Integer ddd, Integer numero, char sexo, String pais, String bairro, String complemento, String tipo_logradouro, String logradouro, Integer num_logradouro, String uf ) {
         Session session = HibernateUtil.abrirSessaoComBD();
