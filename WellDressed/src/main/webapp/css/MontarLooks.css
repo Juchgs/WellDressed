@@ -24,13 +24,13 @@ body{
 
 #porta1{
     height:100%;
-    width:200px; 
+    width:200px;
     background: white;
 }
 
 #porta2{
     height:100%;
-    width:200px; 
+    width:200px;
     background: white;
     position:relative;
     float: right;
@@ -48,7 +48,7 @@ body{
 }
 
 .porta{
-    
+   
     height:100%;
     width:30%;
     background: #840002;
@@ -56,7 +56,7 @@ body{
     transition: 0.8s ease-in;
 }
 
-#colunas 
+#colunas
 {
    margin-top: 80%;
    display: inline-block;
