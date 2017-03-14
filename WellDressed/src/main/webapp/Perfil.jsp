@@ -44,7 +44,9 @@
     $( "#txtBusca" ).autocomplete({
       source: function( request, response ) {
         $.ajax( {
-          url: "https://jqueryui.com/resources/demos/autocomplete/search.php?term=coo",
+            /* Mudar esse url para o que será utilizado realmente*/
+          /*  https://jqueryui.com/resources/demos/autocomplete/search.php?term=coo*/
+          url: "http://localhost:8080/WellDressed/ListaFashionista?nome=Polly",
           dataType: "jsonp",
           data: {
             term: request.term
@@ -55,6 +57,7 @@
         } );
       },
       minLength: 2,
+      /* Mudar a função function */
       select: function( event, ui ) {
         log( "Selected: " + ui.item.value + " aka " + ui.item.id );
       }
