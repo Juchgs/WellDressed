@@ -29,12 +29,15 @@
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         </noscript>
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
   <script>
   
@@ -101,7 +104,9 @@
         <div id="TopUser">
             <div id="Config">
                 <h1><%=usuario.getNome()%></h1>
-                <img src="css/images/user.png"/>
+                <img id="imagemUser" src="css/images/edit.png" alt="Usuário" 
+                class="center-block img-circle img-responsive" style="max-width: 10em">
+                
                
                 <table>
                   <tr>

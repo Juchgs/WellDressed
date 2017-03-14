@@ -2,6 +2,7 @@
 package Hibernate;
 
 import hibernatePersistent.fashionista.Fashionista;
+import hibernatePersistent.fashionista.Peca;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
@@ -19,7 +20,7 @@ public class HibernateUtil {
     static {
         try {
             factory = new AnnotationConfiguration().configure()
-                    .addAnnotatedClass(Fashionista.class)
+                    .addAnnotatedClass(Fashionista.class).addAnnotatedClass(Peca.class)
                     .buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Falha ao criar sessionFactory. " + ex);
