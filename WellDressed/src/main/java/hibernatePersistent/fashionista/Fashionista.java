@@ -64,8 +64,13 @@ public class Fashionista {
    @Column(name = "uf")
    private String uf;
 
-    @Column(name = "ativar")
+   @Column(name = "ativar")
    private boolean ativar;
+   
+   @Column(name = "url_imagem")
+   private String url_imagem;
+   
+   
  
     public String getEmail() {
         return email;
@@ -208,13 +213,22 @@ public class Fashionista {
     public boolean isAtivar() {
         return ativar;
     }
-
+    
     /**
      * @param ativar the ativar to set
      */
     public void setAtivar(boolean ativar) {
         this.ativar = ativar;
     }
+
+    public String getUrl_imagem() {
+        return url_imagem;
+    }
+    public void setUrl_imagem(String url_imagem) {
+        this.url_imagem = url_imagem;
+    }
+    
+    
 }
 
     

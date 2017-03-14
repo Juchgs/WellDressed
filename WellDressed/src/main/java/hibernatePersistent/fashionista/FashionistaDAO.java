@@ -9,6 +9,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 
 public class FashionistaDAO { //Data Access Object
 
@@ -72,9 +73,27 @@ public class FashionistaDAO { //Data Access Object
         }
         return fashionistas;
     }
+ 
+    public List listFashionistaByName(String name) {
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Transaction tx = null;
+        List<Fashionista> fashionistas = null;
+        try {
 
+            fashionistas = session.createCriteria(Fashionista.class).add( Restrictions.like("nome", name) ).list();
+
+        } catch (HibernateException e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return fashionistas;
+    }
     /* Method to UPDATE salary for an fashionista */
-    public Fashionista updateFashionista(String emailID, String email, String nome, String senha, String sobrenome, String municipio, Date data_nascimento, Integer ddd, Integer numero, char sexo, String pais, String bairro, String complemento, String tipo_logradouro, String logradouro, Integer num_logradouro, String uf ) {
+    public Fashionista updateFashionista(String emailID, String email, String nome, String senha, String sobrenome, String municipio, Date data_nascimento, Integer ddd, Integer numero, char sexo, String pais, String bairro, String complemento, String tipo_logradouro, String logradouro, Integer num_logradouro, String uf, String url_imagem ) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
         Fashionista fashionista = null;
@@ -98,6 +117,7 @@ public class FashionistaDAO { //Data Access Object
             fashionista.setLogradouro(logradouro);
             fashionista.setNum_logradouro(num_logradouro);
             fashionista.setUf(uf);
+            fashionista.setUrl_imagem(url_imagem);
             session.update(fashionista);
             tx.commit();
         } catch (HibernateException e) {
@@ -110,7 +130,7 @@ public class FashionistaDAO { //Data Access Object
             return fashionista;
         }
     }
-    
+   
     public Fashionista desabilitaFashionista(String emailID) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
@@ -131,7 +151,7 @@ public class FashionistaDAO { //Data Access Object
             return fashionista;
         }
     }
-    
+   
         public Fashionista AtivarFashionista(String emailID) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
@@ -152,8 +172,8 @@ public class FashionistaDAO { //Data Access Object
             return fashionista;
         }
     }
-    
-    
+   
+   
     /* Method to DELETE an fashionista from the records */
     public void deleteFashionista(String emailID) {
         Session session = HibernateUtil.abrirSessaoComBD();
@@ -173,7 +193,7 @@ public class FashionistaDAO { //Data Access Object
             session.close();
         }
     }
-    
+   
     public Fashionista recuperaFashionista(String email) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Fashionista fashionistas = null;
@@ -182,7 +202,7 @@ public class FashionistaDAO { //Data Access Object
                      .createQuery("from Fashionista where email = :email")
                      .setString("email", email)
                      .uniqueResult();
-            
+           
         } catch (HibernateException e) {
             e.printStackTrace();
         } finally {
