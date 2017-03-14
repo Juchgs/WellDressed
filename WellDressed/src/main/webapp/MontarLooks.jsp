@@ -16,7 +16,7 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/init.js"></script>
-       
+      
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-desktop.css" />
@@ -28,12 +28,8 @@
         var abreEsquerda = function(){
                     document.getElementById('porta3').style.right = '5px';
         }
-
-        var abreDireita = function(){
-
        var abreDireita = function(){
                     document.getElementById('porta4').style.left = '750px';
-
         }
     </script>
     </head>
@@ -93,7 +89,7 @@
                     <img src="css/images/like.png">
 
                 </div>
-               
+              
             </div>
         </div>
     </body>

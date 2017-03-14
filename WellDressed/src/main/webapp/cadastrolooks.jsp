@@ -52,7 +52,77 @@
             <a href="MontarLooks.jsp" class="button big special" id="bota">Voltar</a>
             
             <!-- Testando o Modal -->
-            
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Abrir Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="close">&times;</span>
+      <h3>Descreva seu Look</h3>
+    </div>
+    <div class="modal-body">
+     <!--   <p>Some text in the Modal Body</p>
+        <p>Some other text...</p> -->
+        <table>
+            <tr>
+                <td><h2>Peça: </h2></td>
+                <td><input type="text" name="" id="" placeholder="Digite o tipo da sua peça..."/></td>
+            </tr>
+            <tr>
+                <td><h2>Cor:</h2></td>
+                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+            </tr>
+            <tr>
+                <td><h2>Tecido:</h2></td>
+                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+            </tr>
+            <tr>
+                <td><h2>Tamanho:</h2></td>
+                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+            </tr>
+        </table>
+        <!--    <h3>Peça:</h3>
+            <input type="text" name="" id="" placeholder="Digite o tipo da sua peça -->
+    </div>
+    <div class="modal-footer">
+        <h3>WellDressed</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
             <!-- -->
             <p id="bo" style="color: white">Clique nos botões para cadastrar seus Looks !!!</p>
