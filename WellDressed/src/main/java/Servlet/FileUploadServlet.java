@@ -48,12 +48,12 @@ public class FileUploadServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-        
+       
         /*PecaDAO PecaDAO = new PecaDAO();*/
         Peca peca = new Peca();
 
-        peca.setCod_peca(request.getParameter("nome"));
-        response.setContentType("text/html;charset=UTF-8");
+        /*peca.setCod_peca(request.getParameter("nome"));
+         response.setContentType("text/html;charset=UTF-8");
         try {
             createFile(request);
         } 
@@ -84,7 +84,7 @@ public class FileUploadServlet extends HttpServlet {
         
           
      // Create path components to save the file
-        String path = "/tmp";
+ /*       String path = "/tmp";
         Part filePart = request.getPart("file");
         String fileName = getFileName(filePart);
 
@@ -142,7 +142,7 @@ public class FileUploadServlet extends HttpServlet {
         }
         return null;
      }
-}
+}*/
    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -153,8 +153,8 @@ public class FileUploadServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+  /*  @Override
+     void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
@@ -167,7 +167,7 @@ public class FileUploadServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
+    /*@Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
@@ -178,10 +178,11 @@ public class FileUploadServlet extends HttpServlet {
      *
      * @return a String containing servlet description
      */
-    @Override
+   /* @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
-
-    }
+    }// </editor-fold>*/
+    
+ }
+}
 
