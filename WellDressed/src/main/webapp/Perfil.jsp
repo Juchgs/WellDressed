@@ -103,18 +103,16 @@
         </div>
         <div id="TopUser">
             <div id="Config">
-                <h1><%=usuario.getNome()%></h1>
+                <h1 style="margin-top:1%"><%=usuario.getNome()%></h1>
                 <img id="imagemUser" src="css/images/edit.png" alt="Usuário" 
-                class="center-block img-circle img-responsive" style="max-width: 10em">
-                
-               
+                     class="center-block img-circle img-responsive" style="max-width: 10em">
                 <table>
                   <tr>
                             <td><a href="MontarLooks.jsp">MontarLooks</a></td> 
                             <td><a href="Configuracoes.jsp">Configurações</a></td>
                             <td><a href="Fashionistas.jsp" value="Fashionistas" onclick="window.open('ListaFashionista')">Fashionistas</a></td>
                    </tr>
-                </table >
+                </table>
             </div>
                 </div>
         </div>
