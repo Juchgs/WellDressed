@@ -36,34 +36,10 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-  <script>
-  
-    $( "#txtBusca" ).autocomplete({
-      source: function( request, response ) {
-        $.ajax( {
-            /* Mudar esse url para o que será utilizado realmente*/
-          /*  https://jqueryui.com/resources/demos/autocomplete/search.php?term=coo*/
-          url: "http://localhost:8080/WellDressed/ListaFashionista?nome=Polly",
-          dataType: "jsonp",
-          data: {
-            term: request.term
-          },
-          success: function( data ) {
-            response( data );
-          }
-        } );
-      },
-      minLength: 2,
-      /* Mudar a função function */
-      select: function( event, ui ) {
-        log( "Selected: " + ui.item.value + " aka " + ui.item.id );
-      }
-    } );
-  } );
-  </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/autocomplete.js"></script>
+ 
     </head>
     <body class="homepage">
         <!-- Header -->
