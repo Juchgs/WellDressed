@@ -36,31 +36,10 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-  <script>
-  
-    $( "#txtBusca" ).autocomplete({
-      source: function( request, response ) {
-        $.ajax( {
-          url: "https://jqueryui.com/resources/demos/autocomplete/search.php?term=coo",
-          dataType: "jsonp",
-          data: {
-            term: request.term
-          },
-          success: function( data ) {
-            response( data );
-          }
-        } );
-      },
-      minLength: 2,
-      select: function( event, ui ) {
-        log( "Selected: " + ui.item.value + " aka " + ui.item.id );
-      }
-    } );
-  } );
-  </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/autocomplete.js"></script>
+ 
     </head>
     <body class="homepage">
         <!-- Header -->
@@ -103,18 +82,16 @@
         </div>
         <div id="TopUser">
             <div id="Config">
-                <h1><%=usuario.getNome()%></h1>
+                <h1 style="margin-top:1%"><%=usuario.getNome()%></h1>
                 <img id="imagemUser" src="css/images/edit.png" alt="Usuário" 
-                class="center-block img-circle img-responsive" style="max-width: 10em">
-                
-               
+                     class="center-block img-circle img-responsive" style="max-width: 10em">
                 <table>
                   <tr>
                             <td><a href="MontarLooks.jsp">MontarLooks</a></td> 
                             <td><a href="Configuracoes.jsp">Configurações</a></td>
                             <td><a href="Fashionistas.jsp" value="Fashionistas" onclick="window.open('ListaFashionista')">Fashionistas</a></td>
                    </tr>
-                </table >
+                </table>
             </div>
                 </div>
         </div>

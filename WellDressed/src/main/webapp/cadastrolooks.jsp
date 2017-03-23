@@ -73,11 +73,11 @@
     
             <tr>
                 <td><h2>Peça: </h2></td>
-                <td><input type="text" name="" id="" placeholder="Digite o tipo da sua peça..."/></td>
+                <td><input type="text" name="file" id="" placeholder="Digite o tipo da sua peça..."/></td>
             </tr>
             <tr>
                 <td><h2>Cor:</h2></td>
-                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+                <td><input type="text" name="file" id="" placeholder="Digite a cor..."/></td>
             </tr>
             <tr>
                 <td><h2>Tecido:</h2></td>
@@ -86,6 +86,12 @@
             <tr>
                 <td><h2>Tamanho:</h2></td>
                 <td><input type="text" name="" id="" placeholder="Digite o tamanho..."/></td>
+                <td><input type="text" name="file" id="" placeholder="Digite a cor..."/></td>
+            </tr>
+            <tr>
+                <td><h2>Tamanho:</h2></td>
+                <td><input type="text" name="file" id="" placeholder="Digite a cor..."/></td>
+
             </tr>
         </table>
              <input type="submit" name="Cadastrar" id="boto" value="Cadastrar"/>
@@ -138,9 +144,9 @@ window.onclick = function(event) {
                 File:
                 <input type="file" name="file" id="file" /> <br/>
                 Destination:
-                <input type="text" value="/tmp" name="destination"/>
+                <input type="text" value="/tmp" name="file"/>
                 </br>
-                <input type="submit" value="Upload" name="upload" id="upload" />
+                <input type="submit" value="Upload" name="file" id="upload" />
             </form>
 
             <div class="caixaupload">
