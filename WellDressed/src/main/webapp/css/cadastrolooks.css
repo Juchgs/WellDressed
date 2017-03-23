@@ -98,7 +98,7 @@ input {
     z-index: 1; /* Sit on top */
     padding-top: 140px; /* Muda a disposição do modal */
     left: 20%; /*disposição para a direita*/
-    top: 20%; /*Muda a disposição central do modal - centro da página*/
+    top: 5%; /*Muda a disposição central do modal - centro da página*/
     width: 60%; /* Muda a largura do modal */
     height: 100%; /* Muda a altura do modal */
     overflow: auto; /* Enable scroll if needed */
@@ -154,19 +154,44 @@ input {
     text-align: center;
 }
 
-.modal-body {padding: 2px 14px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #B22222; /*Muda a cor da parte de baixo */
-    color: white;
-}
-
-table{
-   /* height: 10%;
-    /*width: 50%;*/
+.modal-body table {
+    padding: 2px 14px;
+    width: 50%;
     margin-left:3%;
+    line-heigth: 100px;
     font: inherit;
     
 }
 
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #B22222; /*Muda a cor da parte de baixo */
+    color: #B22222;
+}
+
+/*table{
+    width: 50%;
+    margin-left:3%;
+    font: inherit;
+ 
+    
+}
+tr {
+   heigth: 10%;
+   line-height: 1.5;
+}
+*/
+#boto
+{      display: block;
+       height: 40px;
+       margin-left: 0.2em;
+       padding: 0.10em 0.9em;
+       letter-spacing: 0.10em;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 0.90em;
+       outline: 0;
+       color: #FFF;
+       background: #B22222;
+       border-radius: 25px;
+}

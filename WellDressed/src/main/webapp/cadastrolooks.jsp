@@ -68,7 +68,9 @@
     <div class="modal-body">
      <!--   <p>Some text in the Modal Body</p>
         <p>Some other text...</p> -->
-        <table>
+     <form action="" method="post">
+         <table style="align-content:center; ">
+    
             <tr>
                 <td><h2>Peça: </h2></td>
                 <td><input type="text" name="" id="" placeholder="Digite o tipo da sua peça..."/></td>
@@ -79,13 +81,16 @@
             </tr>
             <tr>
                 <td><h2>Tecido:</h2></td>
-                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+                <td><input type="text" name="" id="" placeholder="Digite o tecido..."/></td>
             </tr>
             <tr>
                 <td><h2>Tamanho:</h2></td>
-                <td><input type="text" name="" id="" placeholder="Digite a cor..."/></td>
+                <td><input type="text" name="" id="" placeholder="Digite o tamanho..."/></td>
             </tr>
         </table>
+             <input type="submit" name="Cadastrar" id="boto" value="Cadastrar"/>
+             <br/>
+     </form>
         <!--    <h3>Peça:</h3>
             <input type="text" name="" id="" placeholder="Digite o tipo da sua peça -->
     </div>
