@@ -49,7 +49,8 @@ public class FileUploadServlet extends HttpServlet {
         
       // peca.setFoto((request.getParameter("file")).getBytes());  
        peca.setFoto(bytes);
-       peca.setCod_peca(Integer.valueOf(request.getParameter("codigoPeca")));
+       //peca.setCod_peca(Integer.valueOf(request.getParameter("codigoPeca")));
+       peca.setCod_peca(123456);
         
         //Na linha abaixo estamos mandando o DAO salvar o seu objeto peca        
         pecaDAO.addPeca(peca);
